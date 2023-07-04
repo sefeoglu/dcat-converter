@@ -25,7 +25,6 @@ class dcat_ap(object):
         self.graph.bind('vcard', self.VCARD)
         self.graph.bind('locn', self.LOCN)
 
-    @staticmethod
     def add_dataset(self, data, catalog_uri):
         """ add dataset to graph
 
@@ -33,117 +32,145 @@ class dcat_ap(object):
             data (_type_): _description_
             catalog_uri (_type_): _description_
         """
-        dataset_uri = URIRef(data['uri'])
+        dataset_uri = BNode()
         self.graph.add((dataset_uri, self.RDF.type, self.DCAT.Dataset))
-        self.graph.add((dataset_uri, self.DCTERMS.title, Literal("Dataset 1")))
         self.graph.add((catalog_uri, self.DCAT.Dataset, dataset_uri))
 
-        if "title" in data.keys():
-            for title in data['title']:
-                self.add_title(title, dataset_uri)
-        if "creator" in data.keys():
-            for creator in data['creator']:
-                self.add_creator(creator, dataset_uri)
-        if "subject" in data.keys():
-            for subject in data['subject']:
-                self.add_subject(subject, dataset_uri)
+        if "dc:title" in data.keys():
+            if type(data['dc:title']) is list:
+                for title in data['dc:title']:
+                    self.add_title(title, dataset_uri)
+            else:
+                self.add_title(data['dc:title'], dataset_uri)
 
-        if "description" in data.keys():
-            for description in data['description']:
-                self.add_description(description, dataset_uri)
-        if "date" in data.keys():
-            for date in data['date']:
-                self.add_date(date, dataset_uri)
-        if "type" in data.keys():
-            for type_ in data['type']:
-                self.add_type(type_, dataset_uri)
-        if "format" in data.keys():
-            for format_ in data['format']:
-                self.add_format(format_, dataset_uri)
-        if "rights" in data.keys():
-            for rights in data['rights']:
-                self.add_rights(rights, dataset_uri)
-        if "language" in data.keys():
-            for language in data['language']:
-                self.add_language(language, dataset_uri)
-        if "identifier" in data.keys():
-            for identifier in data['identifier']:
-                self.add_identifier(identifier, dataset_uri)
+        
+        if "dc:creator" in data.keys():
+            if type(data['dc:creator']) is list:
+                for creator in data['dc:creator']:
+                    self.add_creator(creator, dataset_uri)
+            else:
+                self.add_creator(data['dc:creator'], dataset_uri)
+        
+        
+        if "dc:subject" in data.keys():
+            if type(data['dc:subject']) is list:
+                for subject in data['dc:subject']:
+                    self.add_subject(subject, dataset_uri)
+            else:
+                self.add_subject(data['dc:subject'], dataset_uri)
+        
+        if "dc:description" in data.keys():
+            if type(data['dc:description']) is list:
+                for description in data['dc:description']:
+                    self.add_description(description, dataset_uri)
+            else:
+                self.add_description(data['dc:description'], dataset_uri)
 
-    def add_catalog(self, dataset, catalog_title, catalog_uri):
+        
+        if "dc:date" in data.keys():
+            if type(data['dc:date']) is list:
+                for date in data['dc:date']:
+                    self.add_date(date, dataset_uri)
+            else:
+                self.add_date(data['dc:date'], dataset_uri)
+
+        if "dc:type" in data.keys():
+            if type(data['dc:type']) is list:
+                for type_ in data['dc:type']:
+                    self.add_type(type_, dataset_uri)
+            else:
+                self.add_type(data['dc:type'], dataset_uri)
+
+        # if "dc:format" in data.keys():
+        #     for format_ in data['dc:format']:
+        #         self.add_format(format_, dataset_uri)
+        
+        if "dc:rights" in data.keys():
+            if type(data['dc:rights']) is list:
+                for rights in data['dc:rights']:
+                    self.add_rights(rights, dataset_uri)
+            else:
+                self.add_rights(data['dc:rights'], dataset_uri)
+        
+
+        if type(data['dc:language']) is list:
+            if "dc:language" in data.keys():
+                for language in data['dc:language']:
+                    self.add_language(language, dataset_uri)
+        else: 
+            self.add_language(data['dc:language'], dataset_uri)
+        
+        if type(data['dc:identifier']) is list:
+            if "dc:identifier" in data.keys():
+                for identifier in data['dc:identifier']:
+                    self.add_identifier(identifier, dataset_uri)
+        else:
+            self.add_identifier(data['dc:identifier'], dataset_uri)
+
+    def add_catalog(self, dataset, catalog_uri_text, catalog_title):
         """ add catalog to graph"""
 
-        catalog_uri = BNode()
+        catalog_uri = URIRef(catalog_uri_text)
         title = catalog_title
-        self.graph.add((catalog_uri, self.RDF.about, Literal(catalog_uri)))
         self.graph.add((catalog_uri, self.RDF.type, self.DCAT.Catalog))
         self.graph.add((catalog_uri, self.DCTERMS.title, Literal(title)))
-        for i, item in enumerate(dataset):
+        len_ = len(dataset)
+        for i in range(0, len_):
+            item = dataset[str(i)]['publication']['oai_dc:dc']
             self.add_dataset(item, catalog_uri)
     
-    @staticmethod
-    def add_title(self, data, dataset_uri):
+    def add_title(self, title, dataset_uri):
         """ add title to dataset
         """
-        self.graph.add((dataset_uri, self.DCTERMS.title, Literal(data['title'])))
+        self.graph.add((dataset_uri, self.DCTERMS.title, Literal(title)))
 
-    @staticmethod
-    def add_creator(self, data, dataset_uri):
+    def add_creator(self, creator, dataset_uri):
         """ add creator to graph"""
         person_uri = BNode()
         self.graph.add((person_uri, self.RDF.type, self.FOAF.Person))
-        self.graph.add((person_uri, self.FOAF.name, Literal(data['creator'])))
-        self.graph.add((person_uri, self.FOAF.mbox, Literal(data['creator_email'])))
+        self.graph.add((person_uri, self.FOAF.name, Literal(creator)))
         self.graph.add((dataset_uri, self.DCTERMS.creator, person_uri))
     
-    @staticmethod
-    def add_subject(self, data, dataset_uri):
+    def add_subject(self, subject, dataset_uri):
         """add subject to graph
         """
-        self.graph.add((dataset_uri, self.DCTERMS.subject, Literal(data['subject'])))
+        self.graph.add((dataset_uri, self.DCTERMS.subject, Literal(subject)))
 
-    @staticmethod
-    def add_description(self, data, dataset_uri):
+    def add_description(self, description, dataset_uri):
         """description to graph
         """
-        self.graph.add((dataset_uri, self.DCTERMS.description, Literal(data['description'])))
+        self.graph.add((dataset_uri, self.DCTERMS.description, Literal(description)))
 
-    @staticmethod
-    def add_date(self, data, dataset_uri):
+    def add_date(self, date, dataset_uri):
         """add date to graph
         """
-        self.graph.add((dataset_uri, self.DCTERMS.date, Literal(data['date'])))
+        self.graph.add((dataset_uri, self.DCTERMS.date, Literal(date)))
 
-    @staticmethod
-    def add_type(self, data, dataset_uri):
+    def add_type(self, _type_, dataset_uri):
         """add type to graph"""
-        self.graph.add((dataset_uri, self.DCTERMS.type, Literal(data['type'])))
+        self.graph.add((dataset_uri, self.DCTERMS.type, Literal(_type_)))
 
-    @staticmethod
-    def add_format(self, data, dataset_uri):
+    def add_format(self, format, dataset_uri):
         """add format to graph"""
-        self.graph.add((dataset_uri, self.DCTERMS.format, Literal(data['format'])))
+        self.graph.add((dataset_uri, self.DCTERMS.format, Literal(format)))
 
-    @staticmethod
-    def add_rights(self, data, dataset_uri):
+    def add_rights(self, right, dataset_uri):
         """add rights to graph"""
-        self.graph.add((dataset_uri, self.DCTERMS.rights, Literal(data['rights'])))
+        self.graph.add((dataset_uri, self.DCTERMS.rights, Literal(right)))
 
-    @staticmethod
-    def add_language(self, data, dataset_uri):
+    def add_language(self, language, dataset_uri):
         """add language to graph"""
-        self.graph.add((dataset_uri, self.DCTERMS.language, Literal(data['language'])))
+        self.graph.add((dataset_uri, self.DCTERMS.language, Literal(language)))
 
-    @staticmethod
-    def add_identifier(self, data, dataset_uri):
+    def add_identifier(self, identifier, dataset_uri):
         """add identifier to graph"""
-        self.graph.add((dataset_uri, self.DCTERMS.identifier, Literal(data['identifier'])))
+        self.graph.add((dataset_uri, self.DCTERMS.identifier, Literal(identifier)))
 
 
     def save_graph(self, filepath):
         """save graph to file"""
         self.graph.serialize(destination=filepath, format='pretty-xml')
-        
+
 
 if __name__ == "__main__":
     dcat = dcat_ap()
