@@ -7,8 +7,6 @@ The project converts the oai_dc formatted meta data into dcat_ap format and save
 .
 ├── LICENSE
 ├── README.md
-├── config.ini
-├── data
 └── src
     ├── converter_service.py 
     ├── dcat_ap.py           
