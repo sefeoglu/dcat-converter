@@ -39,7 +39,12 @@ class dcat_ap(object):
         if "dc:title" in data.keys():
             if type(data['dc:title']) is list:
                 for title in data['dc:title']:
-                    self.add_title(title, dataset_uri)
+                    if type(title) is dict:
+                        self.add_title(title['#text'], dataset_uri)
+                    else:
+                        self.add_title(title, dataset_uri)
+            elif type(data['dc:title']) is dict:
+                self.add_title(data['dc:title']['#text'], dataset_uri)
             else:
                 self.add_title(data['dc:title'], dataset_uri)
 
@@ -47,7 +52,14 @@ class dcat_ap(object):
         if "dc:creator" in data.keys():
             if type(data['dc:creator']) is list:
                 for creator in data['dc:creator']:
-                    self.add_creator(creator, dataset_uri)
+                    if type(creator) is dict:
+                        if "#text" in creator.keys():
+                            self.add_creator(creator["pc:person"]['pc:name']['pc:foreName']+" "+creator['#text']["pc:person"]['pc:name']['pc:surName'], dataset_uri)
+                    else:
+                        self.add_creator(creator, dataset_uri)
+            elif type(data['dc:creator']) is dict:
+                if "#text" in data['dc:creator'].keys():
+                    self.add_creator(data['dc:creator']["pc:person"]['pc:name']['pc:foreName']+" "+data['dc:creator']["pc:person"]['pc:name']['pc:surName'], dataset_uri)
             else:
                 self.add_creator(data['dc:creator'], dataset_uri)
         
@@ -55,7 +67,12 @@ class dcat_ap(object):
         if "dc:subject" in data.keys():
             if type(data['dc:subject']) is list:
                 for subject in data['dc:subject']:
-                    self.add_subject(subject, dataset_uri)
+                    if type(subject) is dict and "#text" in subject.keys():
+                        self.add_subject(subject['#text'], dataset_uri)
+                    else:
+                        self.add_subject(subject, dataset_uri)
+            elif type(data['dc:subject']) is dict and "#text" in data['dc:subject'].keys():
+                self.add_subject(data['dc:subject']['#text'], dataset_uri)
             else:
                 self.add_subject(data['dc:subject'], dataset_uri)
         
@@ -63,6 +80,8 @@ class dcat_ap(object):
             if type(data['dc:description']) is list:
                 for description in data['dc:description']:
                     self.add_description(description, dataset_uri)
+            elif type(data['dc:description']) is dict:
+                self.add_description(data['dc:description']['#text'], dataset_uri)
             else:
                 self.add_description(data['dc:description'], dataset_uri)
 
@@ -71,6 +90,8 @@ class dcat_ap(object):
             if type(data['dc:date']) is list:
                self.add_issued(data['dc:date'][0], dataset_uri)
                self.add_modified(data['dc:date'][1], dataset_uri)
+            elif type(data['dc:date']) is dict:
+                self.add_issued(data['dc:date']['#text'], dataset_uri)
             else:
                 self.add_issued(data['dc:date'], dataset_uri)
 
@@ -78,34 +99,90 @@ class dcat_ap(object):
             if type(data['dc:type']) is list:
                 for type_ in data['dc:type']:
                     self.add_type(type_, dataset_uri)
+            elif type(data['dc:type']) is dict:
+                self.add_type(data['dc:type']['#text'], dataset_uri)
             else:
                 self.add_type(data['dc:type'], dataset_uri)
 
-        # if "dc:format" in data.keys():
-        #     for format_ in data['dc:format']:
-        #         self.add_format(format_, dataset_uri)
+        if "dc:format" in data.keys():
+            if type(data['dc:format']) is list:
+                for format_ in data['dc:format']:
+                    self.add_format(format_, dataset_uri)
+            elif type(data['dc:format']) is dict:
+                self.add_format(data['dc:format']['#text'], dataset_uri)
+            else:
+                self.add_format(data['dc:format'], dataset_uri)
         
         if "dc:rights" in data.keys():
             if type(data['dc:rights']) is list:
                 for rights in data['dc:rights']:
                     self.add_rights(rights, dataset_uri)
+            elif type(data['dc:rights']) is dict:
+                self.add_rights(data['dc:rights']['#text'], dataset_uri)
             else:
                 self.add_rights(data['dc:rights'], dataset_uri)
         
 
-        if type(data['dc:language']) is list:
-            if "dc:language" in data.keys():
+        if "dcterms:created" in data.keys():
+            if type(data['dcterms:created']) is list:
+                for created in data['dcterms:created']:
+                    if type(created) is dict:
+                        self.add_issued(created['#text'], dataset_uri)
+                    else:
+                        self.add_issued(created, dataset_uri)
+            elif type(data['dcterms:created']) is dict:
+                self.add_issued(data['dcterms:created']['#text'], dataset_uri)
+            else:
+                self.add_issued(data['dcterms:created'], dataset_uri)
+        
+        if "dcterms:dateSubmitted" in data.keys():
+            if type(data["dcterms:dateSubmitted"]) is list:
+                for date in data["dcterms:dateSubmitted"]:
+                    if type(date) is dict:
+                        self.add_modified(date['#text'], dataset_uri)
+                    else:
+                        self.add_modified(date, dataset_uri)
+            elif type(data["dcterms:dateSubmitted"]) is dict:
+                self.add_modified(data["dcterms:dateSubmitted"]['#text'], dataset_uri)
+            else:
+                self.add_modified(data["dcterms:dateSubmitted"], dataset_uri)
+
+        if "ddb:identifier" in data.keys():
+            if type(data['ddb:identifier']) is list:
+                for identifier in data['ddb:identifier']:
+                    if type(identifier) is dict:
+                        self.add_identifier(identifier['#text'], dataset_uri)
+                    else:
+                        self.add_identifier(identifier, dataset_uri)
+            elif type(data['ddb:identifier']) is dict:
+                self.add_identifier(data['ddb:identifier']['#text'], dataset_uri)
+            else:
+                self.add_identifier(data['ddb:identifier'], dataset_uri)
+        if 'dcterms:abstract' in data.keys():
+            if type(data["dcterms:abstract"]) is list:
+                for abstract in data["dcterms:abstract"]:
+                    self.add_description(abstract['#text'], dataset_uri)
+            elif type(data["dcterms:abstract"]) is dict:
+                self.add_description(data["dcterms:abstract"]["#text"], dataset_uri)
+        
+
+        if "dc:language" in data.keys():
+            if type(data['dc:language']) is list:
                 for language in data['dc:language']:
                     self.add_language(language, dataset_uri)
-        else: 
-            self.add_language(data['dc:language'], dataset_uri)
+            elif type(data['dc:language']) is dict:
+                self.add_language(data['dc:language']['#text'], dataset_uri)
+            else: 
+                self.add_language(data['dc:language'], dataset_uri)
         
-        if type(data['dc:identifier']) is list:
-            if "dc:identifier" in data.keys():
+        if "dc:identifier" in data.keys():
+            if type(data['dc:identifier']) is list:
                 for identifier in data['dc:identifier']:
                     self.add_identifier(identifier, dataset_uri)
-        else:
-            self.add_identifier(data['dc:identifier'], dataset_uri)
+            elif type(data['dc:identifier']) is dict:
+                self.add_identifier(data['dc:identifier']['#text'], dataset_uri)
+            else:
+                self.add_identifier(data['dc:identifier'], dataset_uri)
 
     def add_catalog(self, dataset, catalog_uri_text, catalog_title):
         """ add catalog to graph"""
@@ -116,8 +193,13 @@ class dcat_ap(object):
         self.graph.add((catalog_uri, self.DCTERMS.title, Literal(title)))
         len_ = len(dataset)
         for i in range(0, len_):
-            item = dataset[str(i)]['publication']['oai_dc:dc']
-            self.add_dataset(item, catalog_uri)
+            item = None
+            for key in dataset[str(i)].keys():
+                item = dataset[str(i)][key]
+                if key == "paper" or key == "oai_dc:dc":
+                    break
+            if item is not None:
+                self.add_dataset(item, catalog_uri)
             if i == 1000:
                 break
     
