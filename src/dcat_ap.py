@@ -69,10 +69,10 @@ class dcat_ap(object):
         
         if "dc:date" in data.keys():
             if type(data['dc:date']) is list:
-                for date in data['dc:date']:
-                    self.add_date(date, dataset_uri)
+               self.add_issued(data['dc:date'][0], dataset_uri)
+               self.add_modified(data['dc:date'][1], dataset_uri)
             else:
-                self.add_date(data['dc:date'], dataset_uri)
+                self.add_issued(data['dc:date'], dataset_uri)
 
         if "dc:type" in data.keys():
             if type(data['dc:type']) is list:
@@ -118,6 +118,8 @@ class dcat_ap(object):
         for i in range(0, len_):
             item = dataset[str(i)]['publication']['oai_dc:dc']
             self.add_dataset(item, catalog_uri)
+            if i == 1000:
+                break
     
     def add_title(self, title, dataset_uri):
         """ add title to dataset
@@ -134,17 +136,22 @@ class dcat_ap(object):
     def add_subject(self, subject, dataset_uri):
         """add subject to graph
         """
-        self.graph.add((dataset_uri, self.DCTERMS.subject, Literal(subject)))
+        self.graph.add((dataset_uri, self.DCAT.keyword, Literal(subject)))
 
     def add_description(self, description, dataset_uri):
         """description to graph
         """
         self.graph.add((dataset_uri, self.DCTERMS.description, Literal(description)))
 
-    def add_date(self, date, dataset_uri):
+    def add_issued(self, date, dataset_uri):
         """add date to graph
         """
-        self.graph.add((dataset_uri, self.DCTERMS.date, Literal(date)))
+        self.graph.add((dataset_uri, self.DCTERMS.issued, Literal(date)))
+    
+    def add_modified(self, date, dataset_uri):
+        """add date to graph
+        """
+        self.graph.add((dataset_uri, self.DCTERMS.modified, Literal(date)))
 
     def add_type(self, _type_, dataset_uri):
         """add type to graph"""

@@ -3,9 +3,8 @@ from dcat_ap import dcat_ap
 
 class converterService(object):
 
-    def __init__(self, catalog_title, catalog_uri, out_path):
-        self.data = read_json("tu-depositonce_repo.json")
-        self.output = {}
+    def __init__(self, catalog_title, catalog_uri, input_path,  out_path):
+        self.data = read_json(input_path)
         self.catalog_title = catalog_title
         self.catalog_uri = catalog_uri
         self.out_path = out_path
@@ -20,4 +19,4 @@ class converterService(object):
 
 
 if __name__ == '__main__':
-    service = converterService("TU DepositOnce", "https://depositonce.tu-berlin.de", "out.rdf")
+    service = converterService("HU  Berlin EDOC", "https://edoc.hu-berlin.de/", "hu-edoc.json","hu_berlin_catalog.rdf")
