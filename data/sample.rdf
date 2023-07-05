@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:dcat="http://www.w3.org/ns/dcat#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+>
+  <dcat:Catalog rdf:about="https://depositonce.tu-berlin.de">
+    <dct:title>TU  Berlin Depositonce</dct:title>
+    <dcat:Dataset>
+      <dcat:Dataset rdf:nodeID="N2bcacd61a04741dfaf2dafb1d03bb7ed">
+        <dct:title>Tradition as a Stepping Stone for a Microbial Defined Water Kefir Fermentation Process: Insights in Cell Growth, Bioflavoring, and Sensory Perception</dct:title>
+        <dct:creator>
+          <foaf:Person rdf:nodeID="N4ba78f1d02fd4d44ae93d0245f60f257">
+            <foaf:name>Köhler, Sarah</foaf:name>
+          </foaf:Person>
+        </dct:creator>
+        <dct:creator>
+          <foaf:Person rdf:nodeID="N4c42bca40e0f44ef90d768a2c52886ea">
+            <foaf:name>Schmacht, Maximilian</foaf:name>
+          </foaf:Person>
+        </dct:creator>
+        <dct:creator>
+          <foaf:Person rdf:nodeID="N1b98fc8d4cb6447ca9bcafdd407c3bf2">
+            <foaf:name>Troubounis, Aktino H. L.</foaf:name>
+          </foaf:Person>
+        </dct:creator>
+        <dct:creator>
+          <foaf:Person rdf:nodeID="N1ac785be4b6f4ea3b04a2eab113189e7">
+            <foaf:name>Ludszuweit, Marie</foaf:name>
+          </foaf:Person>
+        </dct:creator>
+        <dct:creator>
+          <foaf:Person rdf:nodeID="Nd840e81b42804fc58605dbdf8e807f89">
+            <foaf:name>Rettberg, Nils</foaf:name>
+          </foaf:Person>
+        </dct:creator>
+        <dct:creator>
+          <foaf:Person rdf:nodeID="Ne4da1dcb7d824324ae270b83410507de">
+            <foaf:name>Senz, Martin</foaf:name>
+          </foaf:Person>
+        </dct:creator>
+        <dcat:keyword>570 Biowissenschaften; Biologie</dcat:keyword>
+        <dcat:keyword>water kefir</dcat:keyword>
+        <dcat:keyword>co-culture</dcat:keyword>
+        <dcat:keyword>lactic acid bacteria</dcat:keyword>
+        <dcat:keyword>yeast</dcat:keyword>
+        <dcat:keyword>bioflavoring</dcat:keyword>
+        <dcat:keyword>process development</dcat:keyword>
+        <dcat:keyword>yeast extract</dcat:keyword>
+        <dct:description>A process development from a traditional grain-based fermentation to a defined water kefir fermentation using a co-culture of one lactic acid bacterium and one yeast was elaborated as a prerequisite for an industrially scalable, controllable, and reproducible process. Further, to meet a healthy lifestyle, a low ethanol-containing product was aimed for. Five microbial strains—Hanseniaspora valbyensis, Dekkera bruxellensis, Saccharomyces cerevisiae, Liquorilactobacillus nagelii, and Leuconostoc mesenteroides—were used in pairs in order to examine their influence on the fermentation progress and the properties of the resulting water kefir products against grains as a control. Thereby, the combination of H. valbyensis and L. mesenteroides provided the best-rated water kefir beverage in terms of taste and low ethanol concentrations at the same time. As a further contribution to harmonization and reduction of complexity, the usage of dried figs in the medium was replaced by fig syrup, which could have been proven as an adequate substitute. However, nutritional limitations were faced afterward, and thus, an appropriate supplementation strategy for yeast extract was established. Finally, comparative trials in 5-L scale applying grains as well as a defined microbial consortium showed both water kefir beverages characterized by a pH of 3.14, and lactic acid and aromatic sensory properties. The product resulting from co-culturing outperformed the grain-based one, as the ethanol level was considerably lower in favor of an increased amount of lactic acid. The possibility of achieving a water kefir product by using only two species shows high potential for further detailed research of microbial interactions and thus functionality of water kefir.</dct:description>
+        <dct:description>DFG, 414044773, Open Access Publizieren 2021 - 2022 / Technische Universität Berlin</dct:description>
+        <dct:issued>2021-11-23T12:54:54Z</dct:issued>
+        <dct:modified>2021-11-23T12:54:54Z</dct:modified>
+        <dct:type>Article</dct:type>
+        <dct:type>publishedVersion</dct:type>
+        <dct:rights>https://creativecommons.org/licenses/by/4.0/</dct:rights>
+        <dct:language>en</dct:language>
+        <dct:identifier>1664-302X</dct:identifier>
+        <dct:identifier>https://depositonce.tu-berlin.de/handle/11303/13949</dct:identifier>
+        <dct:identifier>http://dx.doi.org/10.14279/depositonce-12722</dct:identifier>
+      </dcat:Dataset>
+    </dcat:Dataset>
+    <dcat:Dataset>
+      <dcat:Dataset rdf:nodeID="N9888e865f47a4f7384f5a5a283f966a2">
+        <dct:title>Einführung der Polythermen Temperatur Rampen Methode für die Ermittlung kinetischer Daten</dct:title>
+        <dct:creator>
+          <foaf:Person rdf:nodeID="Nc696f504efbe40cdb189a82f15c6285b">
+            <foaf:name>Liebner, Christian</foaf:name>
+          </foaf:Person>
+        </dct:creator>
+        <dcat:keyword>540 Chemie und zugeordnete Wissenschaften</dcat:keyword>
+        <dcat:keyword>Ammoniaksynthese</dcat:keyword>
+        <dcat:keyword>Kinetik</dcat:keyword>
+        <dcat:keyword>Methode</dcat:keyword>
+        <dcat:keyword>ODH Propan</dcat:keyword>
+        <dcat:keyword>Polytherm</dcat:keyword>
+        <dcat:keyword>Ammonia synthesis</dcat:keyword>
+        <dcat:keyword>Kinetic</dcat:keyword>
+        <dcat:keyword>Method</dcat:keyword>
+        <dcat:keyword>Odh propane</dcat:keyword>
+        <dcat:keyword>Polythermal</dcat:keyword>
+        <dct:description>Gegenstand der Reaktionstechnik ist die Optimierung der Reaktionsführung auf der Basis kinetischer Informationen. Kinetische Untersuchung chemischer Prozesse sind stets mit einem erheblichen Zeit- und Materialaufwand verbunden. Eine von Wojciechowski in 1995 vorgeschlagene Methode zur Aufzeichung kinetischer Daten (Polythermer Temperatur-Rampen Reaktor, PTR bzw. TSR) [1] zielt darauf ab, die erforderliche Untersuchungszeit deutlich zu verkürzen. Diese neue Methode setzt die Einhaltung wohldefinierter Randbedingungen voraus. Die wichtigsten Randbedingungen fordern eine schnelle Einstellung des stationären Zustandes des Katalysators, um eine kontinuierliche Datenaufzeichung über einem Temperaturprogramm zu realisieren, sowie die Abwesenheit radialer Gradienten. Die PTR-Methode erlaubt axiale Gradienten in Temperatur und Konzentration. In der vorliegenden Arbeit wurde eine Analyse der Anwendbarkeit, der Vorteile, Nachteile und Randbedingungen der PTR-Methode am Beispiel der Ammoniaksynthese mit einem kommerziellen Katalysator der BASF und einem mikrokinetischen Modell aus der Literatur [2] durchgeführt. Die experimentellen Daten werden in einem weiten Bereich von Stickstoff- und Wasserstoffpartialdrücken und großen Temperaturintervall zufriedenstellend beschrieben. Es konnte durch Vergleich mit einer konventionellen kinetischen Auswertung bestätigt werden, daß die PTR-Methode mit einem geringeren Zeitaufwand vertrauenswürdige kinetische Analysen liefert. Für die Ammoniaksynthese ergibt sich im Vergleich mit der konventionellen stationären Vorgehensweise insgesamt ein Zeitvorteil für die kinetische Untersuchung von etwa 50 %. Im Anschluß an die erfolgreiche Validierung wurde die PTR-Methode erstmals auf eine stark exotherme Reaktion, der oxidativen Dehydrierung von Propan, angewandt. Dabei zeigte sich, daß ie PTR-Methode auch auf komplexe Reaktionen mit starker Wärmetönung anwendbar ist. Unter Einhaltung der Randbedingungen konnten selbst bei axialen Temperaturdifferenzen von bis zu 30 K brauchbare Daten erhalten werden. Datenumfang und Informationstiefe, insbesondere die visualisierten Abhängigkeiten der Stoffmengenänderungsgeschwindigkeiten von Temperatur und Verweilzeit, erleichtern die Ableitung bzw. Verfeinerung kinetischer Modelle. Die PTR-Methode steht nunmehr als effiziente Methode der kinetischen Analyse einer breiten Anwendung zur Verfügung. [1] Rice, N. M., Wojciechowski, B. W., Catal. Today, 36, 191, 1997 [2] Sehested, J., Jacobson, C. J. H., Törnquist, E., Rokni, S., Stoltze, P., J. Catal., 188, 83, 1999</dct:description>
+        <dct:issued>2003-06-23</dct:issued>
+        <dct:modified>2015-11-20T15:20:47Z</dct:modified>
+        <dct:type>Doctoral Thesis</dct:type>
+        <dct:type>publishedVersion</dct:type>
+        <dct:rights>http://rightsstatements.org/vocab/InC/1.0/</dct:rights>
+        <dct:language>German</dct:language>
+        <dct:language>de</dct:language>
+        <dct:identifier>urn:nbn:de:kobv:83-opus-5487</dct:identifier>
+        <dct:identifier>https://depositonce.tu-berlin.de/handle/11303/943</dct:identifier>
+        <dct:identifier>http://dx.doi.org/10.14279/depositonce-646</dct:identifier>
+      </dcat:Dataset>
+    </dcat:Dataset>
+    <dcat:Dataset>
+      <dcat:Dataset rdf:nodeID="Naf9c0dca9fd14794b2540cd70ce46b2a">
+        <dct:title>Spatial Commons. Die Nachbarschaft und ihre Gewerberäume als sozial-räumliches Gemeingut</dct:title>
+        <dct:title>Spatial Commons. The neighbourhood and its local businesses as a socio-spatial commons</dct:title>
+        <dct:creator>
+          <foaf:Person rdf:nodeID="Nabc6d00f990444feacf41b5b4d1d3472">
+            <foaf:name>Bretfeld, Nada</foaf:name>
+          </foaf:Person>
+        </dct:creator>
+        <dct:creator>
+          <foaf:Person rdf:nodeID="N6cfbff65bb5f47aca17e518f90174207">
+            <foaf:name>Heilgemeir, Anna</foaf:name>
+          </foaf:Person>
+        </dct:creator>
+        <dct:creator>
+          <foaf:Person rdf:nodeID="N41684b5854344cb7b4cebb3cfc7df3f3">
+            <foaf:name>Lammert, Friedrich</foaf:name>
+          </foaf:Person>
+        </dct:creator>
+        <dct:creator>
+          <foaf:Person rdf:nodeID="Na5e8f2316e36444faf4799793943cc37">
+            <foaf:name>Pelger, Dagmar</foaf:name>
+          </foaf:Person>
+        </dct:creator>
+        <dct:creator>
+          <foaf:Person rdf:nodeID="Ne919a1f919eb4c9a99370bcd32922133">
+            <foaf:name>Schläger, Philip</foaf:name>
+          </foaf:Person>
+        </dct:creator>
+        <dcat:keyword>710 Städtebau, Raumplanung, Landschaftsgestaltung</dcat:keyword>
+        <dcat:keyword>720 Architektur</dcat:keyword>
+        <dcat:keyword>741 Zeichnung, Zeichnungen</dcat:keyword>
+        <dcat:keyword>300 Sozialwissenschaften</dcat:keyword>
+        <dcat:keyword>307 Gemeinschaften</dcat:keyword>
+        <dcat:keyword>Nolli Plan</dcat:keyword>
+        <dcat:keyword>Kartierung</dcat:keyword>
+        <dcat:keyword>Atlas</dcat:keyword>
+        <dcat:keyword>Wrangelkiez</dcat:keyword>
+        <dcat:keyword>Berlin-Kreuzberg</dcat:keyword>
+        <dcat:keyword>Allmenden-Räume</dcat:keyword>
+        <dcat:keyword>Gemeinwesenarbeit</dcat:keyword>
+        <dcat:keyword>Gewerbeschutz</dcat:keyword>
+        <dcat:keyword>Gentrifizierung</dcat:keyword>
+        <dcat:keyword>Kleingewerbe</dcat:keyword>
+        <dcat:keyword>local businesses</dcat:keyword>
+        <dcat:keyword>commoning</dcat:keyword>
+        <dcat:keyword>gentrification</dcat:keyword>
+        <dcat:keyword>community work</dcat:keyword>
+        <dcat:keyword>mapping</dcat:keyword>
+        <dct:description>Gedruckt erschienen im Universitätsverlag der TU Berlin, ISBN 978-3-7983-3145-7</dct:description>
+        <dct:description>Der sogenannte Wrangelkiez in Kreuzberg ist eines der am stärksten von Gentrifizierung bedrohten Stadtviertel Berlins, verfügt aber zugleich über eine der widerstandsfähigsten Bewohnerschaften der Stadt. Die urbane Nachbarschaft wird in der vorliegenden Publikation unter dem Gesichtspunkt der Commons und des (Dis-)Commonings betrachtet. Dies geschieht aus dreierlei Perspektiven: Planung, Gemeinwesenarbeit und Bildungsarbeit. In der vorliegenden als Bildungsmaterial und Forschungsdokumentation zugleich konzipierten Publikation wird die Nachbarschaft auf ihre Potentiale ihrer Re-/Produktion von sozial-räumlichen Beziehungsgeflechten, Zugangssystemen aber auch in Bezug auf die Risiken der Abschöpfung nachbarschaftlich hergestellter "Güter" untersucht: &#13;
+In welchem Zusammenhang stehen der Raum der Nachbarschaft, das Beziehungsgefüge der Nachbar_ innen und die täglichen Handlungen, die beides verbinden? Mit welchen Mitteln wird der urbane Raum als Ort der Interaktion und Teilhabe gemeinschaftlich erzeugt und erhalten? Welche geplanten oder ungeplanten Prozesse haben Einfluss auf die räumliche Struktur sowie auf den Alltag der Bewohner_innen und Nutzer_innen? Wer bedient sich der kollektiv erzeugten Werte im Raum bzw. wem werden sie zur Verfügung gestellt? &#13;
+Die Publikation wurde durch Weiterbearbeitung der Ergebnisse des im Sommersemester 2017 durchgeführten Recherche- und Kartierungsseminars „Spatial Commons. Hin und weg vom Kiez“ erstellt sowie auf Grundlage der Ergebnisse eines "Fachtags zur Bedeutung von Gewerberäumen als Orte des Gemeinschaffens für die Nachbarschaft" im November 2018.</dct:description>
+        <dct:description>The so-called Wrangelkiez in Kreuzberg is one of Berlin's districts most threatened by gentrification, but at the same time it is one of the most resistant neighbourhoods in the city. In this publication, this urban neighbourhood is considered from the perspective of the commons and the processes of (dis-)commoning. This is done from three perspectives: planning, community work and education. In this publication, conceived as educational material and research documentation at the same time, the neighbourhood  is examined for its potential for the re/production of social-spatial relationships, but also in relation to the risks of the siphoning off of "goods" produced by and in the neighbourhood: &#13;
+What is the relationship between the spaces of the neighbourhood, its social structure, and the daily actions that connect both? By what means is urban space as a place of interaction and participation jointly created and maintained? Which planned or unplanned processes have an influence on the spatial structure as well as on the everyday life of the residents and users? Who makes use of the collectively generated values in the space or to whom are they made available? &#13;
+The publication was developed through further processing of the results of the research and mapping seminar "Spatial Commons. Hin und weg vom Kiez" conducted in the summer semester 2017 and on the basis and of the results of a "symposium on the importance of commercial spaces as places of community life for the neighbourhood" in November 2018.</dct:description>
+        <dct:description>Bildungswerk Berlin der Heinrich-Böll Stiftung</dct:description>
+        <dct:issued>2018-03-29T10:41:29Z</dct:issued>
+        <dct:modified>2020-08-07T10:41:29Z</dct:modified>
+        <dct:type>Book</dct:type>
+        <dct:type>publishedVersion</dct:type>
+        <dct:rights>https://creativecommons.org/licenses/by/4.0/</dct:rights>
+        <dct:language>de</dct:language>
+        <dct:identifier>978-3-7983-3146-4</dct:identifier>
+        <dct:identifier>https://depositonce.tu-berlin.de/handle/11303/7521</dct:identifier>
+        <dct:identifier>http://dx.doi.org/10.14279/depositonce-6741</dct:identifier>
+      </dcat:Dataset>
+    </dcat:Dataset>
+    <dcat:Dataset>
+      <dcat:Dataset rdf:nodeID="N02d88f223d5b45dc9505b0cf77ab4310">
+        <dct:title>Rote Liste und Gesamtartenliste der Wanzen (Heteroptera) von Berlin</dct:title>
+        <dct:title>Red list and checklist of the true bugs (Heteroptera) of Berlin</dct:title>
+        <dct:creator>
+          <foaf:Person rdf:nodeID="Nffd5a00954664c29a3eeee1b54ec68a8">
+            <foaf:name>Deckert, Jürgen</foaf:name>
+          </foaf:Person>
+        </dct:creator>
+        <dct:creator>
+          <foaf:Person rdf:nodeID="N87c6702a7e1c44fabb9b9051671876dc">
+            <foaf:name>Burghardt, Gerhard</foaf:name>
+          </foaf:Person>
+        </dct:creator>
+        <dcat:keyword>595 Arthropoden (Gliederfüßer)</dcat:keyword>
+        <dcat:keyword>Rote Liste</dcat:keyword>
+        <dcat:keyword>Gesamtartenliste</dcat:keyword>
+        <dcat:keyword>Berlin</dcat:keyword>
+        <dcat:keyword>Heteroptera</dcat:keyword>
+        <dcat:keyword>Wanzen</dcat:keyword>
+        <dcat:keyword>red list</dcat:keyword>
+        <dcat:keyword>checklist</dcat:keyword>
+        <dcat:keyword>heteroptera</dcat:keyword>
+        <dcat:keyword>true bugs</dcat:keyword>
+        <dct:description>Es wird eine Checkliste und Rote Liste der Wanzen (Insecta: Heteroptera) Berlins vorgelegt. Die Liste umfasst 502 Wanzenarten, die gegenwärtig in Berlin vorkommen oder die seit Mitte des 19. Jahrhunderts wenigstens einmal hier gefunden wurden. 88 Arten (18 %) werden als (regional) verschollen oder ausgestorben betrachtet und 271 Arten (54 %) als nicht bedroht. Sieben Arten sind Neobiota und 11 sind seit 2005 das erste Mal in Berlin nachgewiesen worden. Die wenigen publizierten Arbeiten der letzten Jahre und das Fehlen systematischer Untersuchungen erschweren die Einschätzung der Häufigkeit vieler Arten und ihre Klassifizierung hinsichtlich des Rote-Liste-Status. Besonders bedroht sind Arten von Feuchtgebieten, von fließenden und stehenden Gewässern, Uferbereichen, sowie Arten des Offenlandes. Die Ursachen liegen wie seit Jahren in der zunehmenden Bebau-ung, Zerstörung, Degradierung und Isolation der Standorte und in der Eutrophierung der Lebensräume.</dct:description>
+        <dct:description>A list of 502 Heteroptera species that are currently known from Berlin or at least found once since the mid-19th century is given. 88 species (18 %) are considered (regionally) extinct and 271 species (54 %) of least concern. Seven species are non-indigenous and 11 species are recorded for the first time in Berlin since 2005. The few publications on Heteroptera in the last years and the lack of systematic studies on this group make it difficult to evaluate the frequency of the species and the classification of the threat. Species are particularly endangered in wetlands, extensive dry or wet grasslands, open lands and also in running and still waters. The drivers are urban sprawl, habitat loss, degradation and isolation as well as eutrophication.</dct:description>
+        <dct:issued>2018-02-21T14:10:21Z</dct:issued>
+        <dct:modified>2018-03-02T14:10:21Z</dct:modified>
+        <dct:type>Book</dct:type>
+        <dct:type>publishedVersion</dct:type>
+        <dct:rights>https://creativecommons.org/licenses/by/4.0/</dct:rights>
+        <dct:language>de</dct:language>
+        <dct:identifier>https://depositonce.tu-berlin.de/handle/11303/7467</dct:identifier>
+        <dct:identifier>http://dx.doi.org/10.14279/depositonce-6690</dct:identifier>
+      </dcat:Dataset>
+    </dcat:Dataset>
+    <dcat:Dataset>
+      <dcat:Dataset rdf:nodeID="N5354049c08e84b759bacc588661e0227">
+        <dct:title>Advances Toward a Lightweight, Variable Fidelity Wake Simulation Tool</dct:title>
+        <dct:creator>
+          <foaf:Person rdf:nodeID="N92e8ce76c697435e81200123d04d4eab">
+            <foaf:name>Saverin, Joseph</foaf:name>
+          </foaf:Person>
+        </dct:creator>
+        <dct:creator>
+          <foaf:Person rdf:nodeID="N868d1253ac664c23a9422c8c465d802d">
+            <foaf:name>Marten, David</foaf:name>
+          </foaf:Person>
+        </dct:creator>
+        <dct:creator>
+          <foaf:Person rdf:nodeID="N6de2c14e0dc64de5af5a618ac047d51c">
+            <foaf:name>Nayeri, Christian Navid</foaf:name>
+          </foaf:Person>
+        </dct:creator>
+        <dct:creator>
+          <foaf:Person rdf:nodeID="N7795ce0d481e42a3956e4a8a4b4656be">
+            <foaf:name>Paschereit, Christian Oliver</foaf:name>
+          </foaf:Person>
+        </dct:creator>
+        <dcat:keyword>530 Physik</dcat:keyword>
+        <dcat:keyword>fidelity wake simulation tool</dcat:keyword>
+        <dcat:keyword>wind turbines</dcat:keyword>
+        <dcat:keyword>wake</dcat:keyword>
+        <dcat:keyword>turbulence</dcat:keyword>
+        <dcat:keyword>2D flow</dcat:keyword>
+        <dct:description>A method is presented which aims to bridge the gap between overly simplified momentum-based wake models and overly demanding finite volume models of wind turbine wake evolution. The method has been developed to allow an essentially user-defined resolution of the wake. Beyond this, all dominant field quantities are automatically resolved by the solver including convection velocity, shear stress and turbulence intensity. Two distinct methods of solution are presented which both have strengths and weaknesses, the choice of which model being fidelity and application dependent. Both methods make use of multilevel spatial integration to allow greatly improved computational efficiency. The method is here presented for 2D flow in the symmetry plane of a vertical axis wind turbine as an initial demonstration of the potential of the method.</dct:description>
+        <dct:issued>2022-05-10T11:58:43Z</dct:issued>
+        <dct:modified>2022-05-10T11:58:43Z</dct:modified>
+        <dct:type>Article</dct:type>
+        <dct:type>publishedVersion</dct:type>
+        <dct:rights>https://creativecommons.org/licenses/by/3.0/</dct:rights>
+        <dct:language>en</dct:language>
+        <dct:identifier>1742-6596</dct:identifier>
+        <dct:identifier>1742-6588</dct:identifier>
+        <dct:identifier>https://depositonce.tu-berlin.de/handle/11303/16846</dct:identifier>
+        <dct:identifier>http://dx.doi.org/10.14279/depositonce-15624</dct:identifier>
+      </dcat:Dataset>
+    </dcat:Dataset>
+    <dcat:Dataset>
+      <dcat:Dataset rdf:nodeID="N676f8c1d8fb546a2ad001aff9f71591d">
+        <dct:title>Untersuchung stationärer Betriebsgrößen des Drehstromasynchron-Linearmotors für Synchrongeschwindigkeiten unter 3m/s</dct:title>
+        <dct:title>Investigation of steady operating quanteties of the three-phase asynchronous linearmotor for speeds less than 3m/s</dct:title>
+        <dct:creator>
+          <foaf:Person rdf:nodeID="Nb03b7561150942b896c7777717930fdd">
+            <foaf:name>Kleemann, Dietmar</foaf:name>
+          </foaf:Person>
+        </dct:creator>
+        <dcat:keyword>620 Ingenieurwissenschaften und zugeordnete Tätigkeiten</dcat:keyword>
+        <dcat:keyword>Dimensionierungshinweise</dcat:keyword>
+        <dcat:keyword>Drehstromasynchron-Linearmotor</dcat:keyword>
+        <dcat:keyword>Stationäre Betriebsgrößen</dcat:keyword>
+        <dcat:keyword>Synchrongeschwindigkeit 1,85m/s</dcat:keyword>
+        <dcat:keyword>Proportioning</dcat:keyword>
+        <dcat:keyword>Quanteties</dcat:keyword>
+        <dcat:keyword>Synchronous speed 1.85m/s</dcat:keyword>
+        <dcat:keyword>Three-phase asynchronous linearmotor</dcat:keyword>
+        <dct:description>Drehstromasynchron-Linearmotoren (DLM) werden kommerziell mit der kleinsten Synchrongeschwindigkeit von 3,0m/s angeboten. Die Stillstandskraft des DLM mit der kleinsten Baugröße liegt bei ca. 30N, so dass damit eine Glasschiebetür mit einer Masse bis 20kg angetrieben werden kann. Bei der üblichen Beharrungsgeschwindigkeit der Glasschiebetür von 0,5m/s sinkt der Wirkungsgrad auf 3 bis 3,5% ab. Bei der Geschwindigkeit von 1,5m/s beträgt er 8,5%. In der vorliegenden Arbeit wird untersucht, ob ein DLM mit einer Synchrongeschwindigkeit von 1,845m/s zu besseren Betriebseigenschaften bei der Anpassung an einen Schiebetürantrieb führt. Dafür ist bei Betrieb an einem 50Hz-Drehstromnetz eine Polteilung von 18,45mm mit Zahnbreiten von 3mm oder darunter erforderlich. Die Lösung besteht in einer neuen Bauweise, bei der die Zähne als Blechpakete in um 90° zum Jochblechpaket angeordnete 3 mm tiefe Nuten gepresst werden. Für den Funktionsnachweis wurde ein neunpoliger Linearmotor mit dem dafür entwickelten Programm DLMCALC berechnet, als Prototyp gebaut und dessen stationäre Kennlinien gemessen. Folgende Ergebnisse wurden erzielt: Die berechneten stationären Kennlinien der Schubkraft, des Stroms, des Wirkungsgrades und des Leistungsfaktors über der Geschwindigkeit wichen an einzelnen Punkten maximal um 4% von den Messwerten ab. Der zusätzliche Bedarf an magnetischer Durchflutung ist mit 1,2% marginal. Der optimierte DLM erreicht bei einem Schlupf von 0,5 einen Wirkungsgrad von 6,0%, bei der von 39 mm auf 49mm erhöhten Statorbreite 7,0%. Eine vergleichende Antriebsberechnung für eine Glasschiebetür zeigt, dass die Verluste des optimierten Prototyps kleiner sind als die des DLM mit der Synchrongeschwindigkeit von 3,0m/s. Die Arbeit enthält Hinweise für die Dimensionierung von DLM mit einer Synchrongeschwindigkeit von unter 2m/s.</dct:description>
+        <dct:issued>2005-01-19</dct:issued>
+        <dct:modified>2015-11-20T16:19:03Z</dct:modified>
+        <dct:type>Doctoral Thesis</dct:type>
+        <dct:type>publishedVersion</dct:type>
+        <dct:rights>http://rightsstatements.org/vocab/InC/1.0/</dct:rights>
+        <dct:language>German</dct:language>
+        <dct:language>de</dct:language>
+        <dct:identifier>urn:nbn:de:kobv:83-opus-10008</dct:identifier>
+        <dct:identifier>https://depositonce.tu-berlin.de/handle/11303/1400</dct:identifier>
+        <dct:identifier>http://dx.doi.org/10.14279/depositonce-1103</dct:identifier>
+      </dcat:Dataset>
+    </dcat:Dataset>
+    <dcat:Dataset>
+      <dcat:Dataset rdf:nodeID="N272b3f27eaa64b05a7c7400e4ba1cfe9">
+        <dct:title>Untersuchung zum Einfluss des menschlichen Gesichtsfelds auf nichtvisuelle Größen</dct:title>
+        <dct:creator>
+          <foaf:Person rdf:nodeID="Nbf4ddcae470d4e498a9a36dda7811ce7">
+            <foaf:name>Broszio, Kai</foaf:name>
+          </foaf:Person>
+        </dct:creator>
+        <dct:creator>
+          <foaf:Person rdf:nodeID="Nfbeb9daf28e44b07b970e1e0ccee12d2">
+            <foaf:name>Bieske, Karin</foaf:name>
+          </foaf:Person>
+        </dct:creator>
+        <dct:creator>
+          <foaf:Person rdf:nodeID="Na6ff818faba34956b1b495b1d3887d61">
+            <foaf:name>Zauner, Johannes</foaf:name>
+          </foaf:Person>
+        </dct:creator>
+        <dcat:keyword>500 Naturwissenschaften und Mathematik::500 Naturwissenschaften::500 Naturwissenschaften und Mathematik</dcat:keyword>
+        <dcat:keyword>600 Technik, Medizin, angewandte Wissenschaften::620 Ingenieurwissenschaften::620 Ingenieurwissenschaften und zugeordnete Tätigkeiten</dcat:keyword>
+        <dcat:keyword>binocular human field of view</dcat:keyword>
+        <dcat:keyword>non-image-forming effects</dcat:keyword>
+        <dcat:keyword>spectral measurements</dcat:keyword>
+        <dcat:keyword>non-visual effects</dcat:keyword>
+        <dcat:keyword>field of view restriction</dcat:keyword>
+        <dct:description>In vielen Studien wird traditionell für die Bestimmung nichtvisueller Lichtwirkungen einer Beleuchtungssituation die vertikale Beleuchtungsstärke oder die vertikale Bestrahlungsstärke in der Hornhautebene herangezogen, um das Licht zu beschreiben, das ins Auge gelangt. Dafür wird die Beleuchtungsstärke mit einem Diffusor in der sogenannten 2π-Geometrie gemessen. Durch die anatomischen Gegebenheiten entspricht das menschliche Gesichtsfeld nicht dem eines Halbraums, sondern ist nach oben und unten eingeschränkt. Der für melanopische Lichtwirkungen einschlägige Standard CIE S026 weist darauf auch explizit hin. Es ist jedoch bisher nicht klar, welche Abweichungen durch die Gesichtsfeldbegrenzung zu erwarten sind. Für eine Abschätzung des Einflusses wurden Messungen bei unterschiedlichen Beleuchtungssituationen im Labor (Licht aus unter-schiedlichen Richtungen) und unter Praxisbedingungen (Licht typisch von oben) durchgeführt. Dafür wurden im 3D-Druck in Anlehnung an CIE S026 gefertigte Gesichtsfeldblenden als Vorsatz zu Spektralmesstechnik in Augenposition verwendet. Besonders bei realen Beleuchtungssituationen, in denen die Beleuchtung über Kopf installiert ist, weichen die Messwerte mit der Gesichtsfeldblende teils deutlich von der vertikalen Beleuch-tungsstärke ohne Blende ab. Diese Messungen zeigen eine Reduzierung der Werte durch die Gesichtsfeldblende von bis zu 60 %. Typisch ist dabei eine vergleichbare Verringerung für die gemessene Beleuchtungsstärke und den MEDI-Wert, d.h. spektrale Abweichungen waren in den untersuchten Situationen fast ausschließlich unkritisch. Diese Verallgemeinerung gilt, da die Verteilung des Lichts im Blickfeld im Allgemeinen spektral gleichartig ist. Bei großen chromatischen Variationen führt die Gesichtsfeldblende hingegen neben einer Verringerung des allgemeinen Bestrahlungsstärkeniveaus auch zu starken spektralen Veränderungen. In einer artifiziellen Laborsituation veränder-te sich bspw. der melanopische Wirkfaktor bei gleicher Beleuchtung um mehr als den Faktor 2 nur durch die Blende.</dct:description>
+        <dct:description>In many studies, vertical illuminance or vertical irradiance in the corneal plane is traditionally used to determine the non-visual light effects of an illumination situation in order to describe the light entering the eye. For this purpose, the illuminance is measured with a diffuser in the so-called 2π geometry. Due to anatomical conditions, the human visual field does not correspond to that of a half-space but is restricted upward and downward. The relevant standard for melanopic light effects, CIE S026, explicitly points this out. However, it is not yet clear which deviations are to be expected due to the visual field limitation. In order to estimate the influence, measurements were carried out in different lighting situations in the laboratory (light from different directions) and under practical conditions (light typically from above). For this purpose, 3D-printed visual field apertures were used in accordance with CIE S026 as an attachment to spectral measurement technology in the eye position. Particularly in real lighting situations where the lighting is installed overhead, the measured values with the visual field aperture sometimes deviate significantly from the vertical illumination intensity without the aperture. These measurements show a reduction in the values due to the field of view aperture of up to 60 %. Typically, there is a comparable reduction for the measured illuminance and the MEDI value, i.e. spectral deviations were almost exclusively uncritical in the situations investigated. This generalization is valid because the distribution of light in the field of view is usually spectrally uniform. In contrast, with large chromatic variations, the field-of-view aperture leads to strong spectral changes in addition to a reduction in the general irradiance level. In an artificial laboratory situation, for example, the melanopic effect factor changed by more than a factor of 2 for the same illumination only due to the aperture.</dct:description>
+        <dct:issued>2023-03-09T16:22:42Z</dct:issued>
+        <dct:modified>2023-03-09T16:22:42Z</dct:modified>
+        <dct:type>Conference Object</dct:type>
+        <dct:type>publishedVersion</dct:type>
+        <dct:rights>https://creativecommons.org/licenses/by/4.0/</dct:rights>
+        <dct:language>de</dct:language>
+        <dct:identifier>https://depositonce.tu-berlin.de/handle/11303/18289</dct:identifier>
+        <dct:identifier>https://doi.org/10.14279/depositonce-17083</dct:identifier>
+      </dcat:Dataset>
+    </dcat:Dataset>
+    <dcat:Dataset>
+      <dcat:Dataset rdf:nodeID="N1cb5d9caf6ce4423b3f500296dd2e619">
+        <dct:title>Computational models of contrast and orientation processing in primary visual cortex</dct:title>
+        <dct:title>Computerbasierte Modelle der Kontrast- und Orientierungsverarbeitung im primären visuellen Kortex</dct:title>
+        <dct:creator>
+          <foaf:Person rdf:nodeID="Ne9d0f2f178174422923c518d25ad67cf">
+            <foaf:name>Stimberg, Marcel</foaf:name>
+          </foaf:Person>
+        </dct:creator>
+        <dcat:keyword>004 Datenverarbeitung; Informatik</dcat:keyword>
+        <dcat:keyword>Computerbasierte Modellierung</dcat:keyword>
+        <dcat:keyword>Neuronale Informationsverarbeitung</dcat:keyword>
+        <dcat:keyword>Neuronale Netze</dcat:keyword>
+        <dcat:keyword>Orientierungsselektivität</dcat:keyword>
+        <dcat:keyword>Visueller Kortex</dcat:keyword>
+        <dcat:keyword>Computational modeling</dcat:keyword>
+        <dcat:keyword>Neural information processing</dcat:keyword>
+        <dcat:keyword>Neural networks</dcat:keyword>
+        <dcat:keyword>Orientation selectivity</dcat:keyword>
+        <dcat:keyword>Visual cortex</dcat:keyword>
+        <dct:description>Der primäre visuelle Kortex (V1) ist das erste kortikale Areal, das in der Verarbeitung visueller Informationen involviert ist. Die Zellen dieses Areals reagieren auf grundlegende Stimuluseigenschaften wie Kontrast oder Orientierung. Auch wenn es sich um den meistuntersuchten Teil des visuellen Systems – und um einen der meistuntersuchten Teile des Gehirns insgesamt – handelt, sind viele Fragen über die beteiligten neuronalen Mechanismen bis heute offen. Anatomische Studien zeigen, dass der größte Teil der Eingaben, den Neuronen in V1 erhalten, nicht von den früheren visuellen Strukturen sondern aus dem Kortex selbst stammen. Die Antwort von Neuronen ist in einem großen Maße von der Aktivität der umgebenden Neuronen im lokalen kortikalen Netzwerk bestimmt. In dieser Arbeit verwenden wir Computermodelle dieser Netzwerke, um deren Beitrag zur visuellen Verarbeitung zu klären und vergleichen die Simulationsergebnisse mit elektrophysiologischen Ableitungen aus dem V1 der Katze. Wir untersuchen zunächst die Rolle des lokalen Schaltkreis in der Erzeugung von Orientierungsselektivität. Die Orientierungspräferenzen von Neuronen im V1 höherer Säugetiere sind nicht zufällig verteilt sondern variieren kontinuierlich und resultieren in einer Orientierungskartenstruktur. Durch systematische Untersuchungen zweier Klassen von Netzwerkmodellen zeigen wir, dass sich die experimentell beobachteten Abhängigkeit der Selektivität von der Kartenposition am besten in einem Netzwerk, das in einem stark rekurrenten Regime arbeitet, erklären lässt. In diesem Netzwerk sind die rekurrenten exzitatorischen und inhibitorischen Ströme annähernd ausbalanciert und dominieren die afferenten Ströme. Diese Resultate werden in einer zweiten Studie bestätigt, in der wir zeigen das ein solches Netzwerk auch experimentell beobachtete Unterschiede in der Variabilität der zeitlichen Antwort erklären kann. Wir untersuchen dann einen weiteren Aspekt der Verarbeitung in V1, die nichtlineare Normalisierung von Zellantworten: Anstatt die Antwort kontinuierlich mit dem Kontrast eines Stimulus zu steigern, saturieren die Antworten kortikaler Zellen deutlich unter den maximal möglichen Aktivitäten. Außerdem werden die Antworten auf zwei Stimuli, die gleichzeitig an der gleichen Position präsentiert werden, nicht linear addiert sondern sind typischerweise kleiner als die Summe der Antworten, wenn die Stimuli einzeln präsentiert werden. Wir zeigen, wie diese Normalisierung aus der Kombination von Eigenschaften der afferenten Eingabe mit der Modulation durch das lokale kortikale Netzwerk hervorgehen kann. Aufgrund des starken Einfluss des Netzwerks kann die Stärke dieser Modulation eine starke Abhängigkeit von der Position in der Orientierungskarte zeigen. Schließlich betrachten wir den Einfluss des lokalen Netzwerks auf die Modulation der Antworten, die durch Stimuli außerhalb des klassischen rezeptiven Feldes hervorgerufen werden, d. h. von Stimuli, die keinerlei Antwort hervorrufen, wenn sie alleine präsentiert werden. Diese Modulationen haben ihren Ursprung außerhalb des lokalen Netzwerks und werden über langreichweitige Verbindungen oder Rückprojektionen von höheren Arealen weitergeleitet. Obwohl wir in dem Modell keinerlei direkte Abhängigkeit dieser Modulation von der Kartenposition einfügen, geschieht die endgültige Verarbeitung dieser Modulation im lokalen Netzwerk und führt damit zu Unterschieden in der resultierenden Modulation für Zellen an verschiedenen Kartenpositionen. Diese Verarbeitung durch das lokale Netzwerk erklärt dann auch experimentell beobachtete Unterschiede in der Orientierungsspezifizität der Modulation.</dct:description>
+        <dct:description>The primary visual cortex (V1) is the first cortical area involved in the processing of visual information, responding to basic features of a visual stimulus like contrast or orientation. Although it is the best studied part of the visual system — and one of the best studied areas in the brain in general — many questions about the involved neural mechanisms remain unclear to date. Anatomical studies show that most of the input received by neurons in V1 does not arise from the earlier visual structures but from within the visual cortex. To a large extent, the response of a neuron is determined by the activity of the surrounding neurons in the local cortical network. In this thesis, we employ computational models of these networks in V1 to shed some light on its contribution to visual processing, comparing the simulation results to electrophysiological recordings from cat V1. We first investigate the role of the local circuitry in the generation of orientation selectivity. Orientation preferences of neurons in V1 of higher mammals are not distributed randomly but vary continuously resulting in an orientation map structure. By systematically exploring two classes of network models we show that the experimentally observed dependence of tuning properties on position in this map is best explained in a network that operates in a strongly recurrent regime, where recurrent excitatory and inhibitory inputs are approximately balanced and dominate the afferent input. These results are confirmed in a second study, where we show that such a network can also explain observed differences in the variability of temporal responses. We then focus on another aspect of input transformation in V1, the non-linear normalization of cell responses: Instead of consistently increasing the response with the contrast of a stimulus, responses of cortical cells saturate well below the maximal levels that would be possible physiologically. In addition, the response to two stimuli at the same position in the visual field is not linearly added but typically smaller than the sum of the responses to the two stimuli presented alone. We demonstrate how such normalization can arise from the combination of afferent input properties with the modulation provided by the local cortical network. Due to the strong influence of the network, the amount of this normalization can show a strong dependence on the position in the local orientation map. Finally, we study the influence of the local network on the response modulation caused by stimuli presented outside of the classical receptive field of a neuron, i. e. by stimuli that do not elicit a response when presented alone. These modulations have their origin outside of the local network and are propagated via long-range connections or via feedback from higher areas. While we explicitly do not include any direct dependence of this modulatory input on the map position, the final processing of the surround influences happens in the local recurrent circuit, leading to differences in the net modulation between cells at different map positions. This processing by the local network then also explains experimentally observed differences in the orientation specificity of the surround influence.</dct:description>
+        <dct:issued>2011-09-08</dct:issued>
+        <dct:modified>2015-11-20T20:44:19Z</dct:modified>
+        <dct:type>Doctoral Thesis</dct:type>
+        <dct:type>publishedVersion</dct:type>
+        <dct:rights>https://creativecommons.org/licenses/by-nc-sa/2.0/</dct:rights>
+        <dct:language>English</dct:language>
+        <dct:language>en</dct:language>
+        <dct:identifier>urn:nbn:de:kobv:83-opus-32305</dct:identifier>
+        <dct:identifier>https://depositonce.tu-berlin.de/handle/11303/3258</dct:identifier>
+        <dct:identifier>http://dx.doi.org/10.14279/depositonce-2961</dct:identifier>
+      </dcat:Dataset>
+    </dcat:Dataset>
+    <dcat:Dataset>
+      <dcat:Dataset rdf:nodeID="N3c9dcd3550d74b219c4c4bbb01d539c5">
+        <dct:title>Robust stability of differential-algebraic equations</dct:title>
+        <dct:creator>
+          <foaf:Person rdf:nodeID="N200fa8fc88374b9ea604c22009b079a4">
+            <foaf:name>Du, Nguyen Huu</foaf:name>
+          </foaf:Person>
+        </dct:creator>
+        <dct:creator>
+          <foaf:Person rdf:nodeID="N5895de6644ac4781814f3b7e4c32c30a">
+            <foaf:name>Linh, Vu Hoang</foaf:name>
+          </foaf:Person>
+        </dct:creator>
+        <dct:creator>
+          <foaf:Person rdf:nodeID="Nd7bced74b781476f94eb1abe2461d035">
+            <foaf:name>Mehrmann, Volker</foaf:name>
+          </foaf:Person>
+        </dct:creator>
+        <dcat:keyword>510 Mathematik</dcat:keyword>
+        <dcat:keyword>differential-algebraic equation</dcat:keyword>
+        <dcat:keyword>robust stability</dcat:keyword>
+        <dcat:keyword>stability radius</dcat:keyword>
+        <dcat:keyword>spectrum</dcat:keyword>
+        <dcat:keyword>spectral set</dcat:keyword>
+        <dcat:keyword>restricted perturbation</dcat:keyword>
+        <dct:description>This paper presents a survey of recent results on the robust stability analysis and the distance to instability for linear time-invariant and time-varying differential-algebraic equations (DAEs). Different stability concepts such as exponential and asymptotic stability are studied and their robustness is analyzed under general as well as restricted sets of real or complex perturbations. Formulas for the distances are presented whenever these are available and the continuity of the distances in terms of the data is discussed. Some open problems and challenges are indicated.</dct:description>
+        <dct:issued>2021-12-17T10:10:03Z</dct:issued>
+        <dct:modified>2021-12-17T10:10:03Z</dct:modified>
+        <dct:type>Research Paper</dct:type>
+        <dct:type>submittedVersion</dct:type>
+        <dct:rights>http://rightsstatements.org/vocab/InC/1.0/</dct:rights>
+        <dct:language>en</dct:language>
+        <dct:identifier>2197-8085</dct:identifier>
+        <dct:identifier>https://depositonce.tu-berlin.de/handle/11303/15733</dct:identifier>
+        <dct:identifier>http://dx.doi.org/10.14279/depositonce-14506</dct:identifier>
+      </dcat:Dataset>
+    </dcat:Dataset>
+    <dcat:Dataset>
+      <dcat:Dataset rdf:nodeID="Nd91ff9e31f93486ca7747296805b0fbe">
+        <dct:title>Ligand spheres in asymmetric hetero Diels-Alder reactions catalyzed by Cu(II) box complexes: experiment and modeling</dct:title>
+        <dct:creator>
+          <foaf:Person rdf:nodeID="N544fee87f67e4b099da0d150c96646a9">
+            <foaf:name>Umamaheswari, V.</foaf:name>
+          </foaf:Person>
+        </dct:creator>
+        <dct:creator>
+          <foaf:Person rdf:nodeID="Nfbd87cc17a2c411c8a8684c0b28f1736">
+            <foaf:name>Cias, Pawel</foaf:name>
+          </foaf:Person>
+        </dct:creator>
+        <dct:creator>
+          <foaf:Person rdf:nodeID="Nd1e4f12bbe7e416c80217ea5893e301c">
+            <foaf:name>Pöppl, Andreas</foaf:name>
+          </foaf:Person>
+        </dct:creator>
+        <dct:creator>
+          <foaf:Person rdf:nodeID="N432d7708f6844b7b963dfd80f57ac7d5">
+            <foaf:name>Kaupp, Martin</foaf:name>
+          </foaf:Person>
+        </dct:creator>
+        <dct:creator>
+          <foaf:Person rdf:nodeID="Naa528df6e8b249ca8d3dfe032ec6bcbe">
+            <foaf:name>Gescheidt, Georg</foaf:name>
+          </foaf:Person>
+        </dct:creator>
+        <dcat:keyword>540 Chemie und zugeordnete Wissenschaften</dcat:keyword>
+        <dct:description>Dieser Beitrag ist mit Zustimmung des Rechteinhabers aufgrund einer (DFG geförderten) Allianz- bzw. Nationallizenz frei zugänglich.</dct:description>
+        <dct:description>This publication is with permission of the rights owner freely accessible due to an Alliance licence and a national licence (funded by the DFG, German Research Foundation) respectively.</dct:description>
+        <dct:description>The stereoselective hetero Diels–Alder reaction between ethyl glyoxylate and cyclohexadiene catalyzed by [Cu(II)t-Bu-(box)](OTf)2 was investigated. The reaction was performed step-by-step and the geometry of the Cu(II) complexes formed in the course of the catalysis was analysed by EPR spectroscopy, advanced pulsed EPR methods (ENDOR, and HYSCORE) and DFT calculations. Our results show that one triflate counterion is directly coordinated to Cu(II) during the catalytic process (axial position). This leads to penta-coordinated Cu(II) complexes. Solvent molecules are able to alter the geometry of the Cu(II) complexes although their coordination is weak. These findings provide an explanation for the solvent and counterion effects observed in many catalytic reactions.</dct:description>
+        <dct:issued>2016-06-22T08:05:23Z</dct:issued>
+        <dct:modified>2016-06-22T08:05:23Z</dct:modified>
+        <dct:type>Article</dct:type>
+        <dct:type>publishedVersion</dct:type>
+        <dct:rights>http://rightsstatements.org/vocab/InC/1.0/</dct:rights>
+        <dct:language>en</dct:language>
+        <dct:identifier>1477-9226</dct:identifier>
+        <dct:identifier>24146076</dct:identifier>
+        <dct:identifier>https://depositonce.tu-berlin.de/handle/11303/5583</dct:identifier>
+        <dct:identifier>http://dx.doi.org/10.14279/depositonce-5212</dct:identifier>
+      </dcat:Dataset>
+    </dcat:Dataset>
+    <dcat:Dataset>
+      <dcat:Dataset rdf:nodeID="N0d30134e36df4275a23f94ee1e2f60d7">
+        <dct:title>Data-driven analysis for multimodal neuroimaging</dct:title>
+        <dct:title>Multivariate Analyseverfahren für multimodale bildgebende Verfahren in den Neurowissenschaften</dct:title>
+        <dct:creator>
+          <foaf:Person rdf:nodeID="Ne88bbe8219e642808cd2076065444e5f">
+            <foaf:name>Bießmann, Felix</foaf:name>
+          </foaf:Person>
+        </dct:creator>
+        <dcat:keyword>004 Datenverarbeitung; Informatik</dcat:keyword>
+        <dcat:keyword>Bildgebende Verfahren</dcat:keyword>
+        <dcat:keyword>Maschinelles Lernen</dcat:keyword>
+        <dcat:keyword>Neurowissenschaft</dcat:keyword>
+        <dcat:keyword>FMRI</dcat:keyword>
+        <dcat:keyword>Machine learning</dcat:keyword>
+        <dcat:keyword>Multimodal</dcat:keyword>
+        <dcat:keyword>Neuroimaging</dcat:keyword>
+        <dct:description>Bildgebende Verfahren in den Neurowissenschaften haben unser Verständnis von Informationsverarbeitung im Hirn entscheidend geprägt. Die schnelle Verbreitung von nicht-invasiven bildgebenden Verfahren wie etwa der funktionellen Magnet-Resonanz Tomographie (fMRT) in den letzten beiden Dekaden erlaubt es heutzutage jedem interessierten Studenten nicht-invasiv den Blutsauerstoffgehalt im Hirn zu messen und so räumlich hochaufgelöste Zeitreihen von Hirnaktivität aufzuzeichnen. Wie genau sich jedoch neuronale Aktivität im Blut-Sauerstoff Gehalt abhängigem Kontrast (englisch: Blood-oxygen level dependent oder BOLD contrast) wiederspiegelt, ist trotz intensiver Forschung an der neurovaskulären Kopplung nach wie vor aktuelles Forschungsthema. Für ein besseres Verständnis des fMRT Signals sind kombinierte Messungen von intrakranialer neuronaler Aktivität und fMRT Signalen zwingend erforderlich. Diese multimodalen Simultanmessungen sind inzwischen technisch möglich. Jedoch fehlen geeignete Analysemethoden. Gängige Verfahren basieren auf vereinfachenden Annahmen über die neurovaskuäre Kopplungsdynamik. Diese Annahmen sind zwar praktisch, erwiesen sich aber in zahlreichen Studien als falsch. In dieser Dissertation wird ein neuartiges Analyseverfahren, temporal kernel Canonical Correlation Analysis (tkCCA), entwickelt, getested und angewandt. TkCCA schätzt Abhängigkeitsstrukturen in hochdimensionalen Daten mit nicht-instantaner Kopplung. Die entscheidenden Vorteile von tkCCA gegenüber herkömmlichen Methoden sind a) direkte Anwendbarkeit auf multimodale Daten, b) Effizienz bei hochdimensionalen Daten mit wenig Datenpunkten und c) Verzicht auf einschränkende Annahmen über die generativen Modelle der gemessenen Daten. Insbesondere erlaubt tkCCA die Analyse hochdimensionaler multimodaler Simultanmessungen von neuronaler Aktivität und fMRT Signalen. Mit Hilfe von tkCCA können neuronale Signale besser aus multivariaten fMRI Messungen vorhergesagt werden. Davon können sowohl Grundlagenforschung als auch klinische Diagnostik profitieren. Darüberhinaus ist tkCCA direkt anwendbar auf andere Arten hochdimensionaler Datenströme mit nicht-instantanen Abhängigkeiten, wie etwa in sozialen Netzwerken im World Wide Web.</dct:description>
+        <dct:description>Neuroimaging, the measurement, analysis and visualization of neural activity, contributed considerably to our understanding of information processing in the brain. The availability of non-invasive neuroimaging devices such as functional magnetic resonance imaging (fMRI) has been increasing rapidly throughout the last two decades. Nowadays every interested student can obtain non-invasively high resolution image time series of the blood-oxygen level dependent (BOLD) signal using fMRI. How exactly neural activity is reflected in the BOLD contrast is still subject of active research. For a more accurate interpretation of the fMRI signal and the underlying neurovascular coupling mechanisms, combined measurements of intracranial neural activity and fMRI signals are indispensable. Such simultaneous measurements have become technically possible – however appropriate analysis methods are still lacking. Classical analysis approaches rely on simplifying assumptions about the neurovascular coupling dynamics. These assumptions are convenient but numerous studies have provided empirical evidence against them. In this dissertation a novel analysis method, termed temporal kernel Canonical Correlation Analysis (tkCCA), will be developed, tested on artificial data and applied to experimental data in order to investigate neurovascular coupling mechanisms. TkCCA estimates dependency structures between high dimensional data with complex temporal coupling dynamics. The important advantages of tkCCA compared to standard methods are a) tkCCA can be directly applied to multimodal data, b) tkCCA is very efficient for high dimensional data with few data points (as is the case for fMRI) and c) tkCCA does not make use of restrictive assumptions about the data generating process. In particular tkCCA can be used to analyze high dimensional simultaneous measurements of neural activity and fMRI signals. Predictions of neural activity using tkCCA are better than when using classical methods. Basic research as well as clinical applications can profit from this more accurate prediction. Besides tkCCA is readily applicable to other domains in which data streams have high dimensional features that are non-instantaneously coupled, such as data from social networks in the World Wide Web.</dct:description>
+        <dct:issued>2011-12-07</dct:issued>
+        <dct:modified>2015-11-20T21:02:12Z</dct:modified>
+        <dct:type>Doctoral Thesis</dct:type>
+        <dct:type>publishedVersion</dct:type>
+        <dct:rights>http://rightsstatements.org/vocab/InC/1.0/</dct:rights>
+        <dct:language>English</dct:language>
+        <dct:language>en</dct:language>
+        <dct:identifier>urn:nbn:de:kobv:83-opus-33865</dct:identifier>
+        <dct:identifier>https://depositonce.tu-berlin.de/handle/11303/3382</dct:identifier>
+        <dct:identifier>http://dx.doi.org/10.14279/depositonce-3085</dct:identifier>
+      </dcat:Dataset>
+    </dcat:Dataset>
+  </dcat:Catalog>
+</rdf:RDF>
