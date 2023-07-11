@@ -65,16 +65,24 @@ class dcat_ap(object):
         
         
         if "dc:subject" in data.keys():
+            
             if type(data['dc:subject']) is list:
                 for subject in data['dc:subject']:
+                    
                     if type(subject) is dict and "#text" in subject.keys():
-                        self.add_subject(subject['#text'], dataset_uri)
-                    else:
-                        self.add_subject(subject, dataset_uri)
+                        if subject['@xsi:type'] == 'xMetaDiss:noScheme':
+                            if subject['#text'] != "{'@xsi:type': 'xMetaDiss:noScheme'}":
+                                self.add_subject(subject['#text'], dataset_uri)
+                    elif "ddc:" not in subject:
+                        if subject != "{'@xsi:type': 'xMetaDiss:noScheme'}":
+                            self.add_subject(subject, dataset_uri)
             elif type(data['dc:subject']) is dict and "#text" in data['dc:subject'].keys():
-                self.add_subject(data['dc:subject']['#text'], dataset_uri)
+                if data['dc:subject']['@xsi:type'] == 'xMetaDiss:noScheme':
+                    if data['dc:subject']['#text'] != "{'@xsi:type': 'xMetaDiss:noScheme'}":
+                        self.add_subject(data['dc:subject']['#text'], dataset_uri)
             else:
-                self.add_subject(data['dc:subject'], dataset_uri)
+                if data['dc:subject'] != "{'@xsi:type': 'xMetaDiss:noScheme'}":
+                    self.add_subject(data['dc:subject'], dataset_uri)
         
         if "dc:description" in data.keys():
             if type(data['dc:description']) is list:
@@ -107,6 +115,7 @@ class dcat_ap(object):
         if "dc:format" in data.keys():
             if type(data['dc:format']) is list:
                 for format_ in data['dc:format']:
+                    print(format_)
                     self.add_format(format_, dataset_uri)
             elif type(data['dc:format']) is dict:
                 self.add_format(data['dc:format']['#text'], dataset_uri)
@@ -150,19 +159,20 @@ class dcat_ap(object):
         if "ddb:identifier" in data.keys():
             if type(data['ddb:identifier']) is list:
                 for identifier in data['ddb:identifier']:
-                    if type(identifier) is dict:
+                    if type(identifier) is dict and "#text" in identifier.keys():
                         self.add_identifier(identifier['#text'], dataset_uri)
                     else:
                         self.add_identifier(identifier, dataset_uri)
-            elif type(data['ddb:identifier']) is dict:
+            elif type(data['ddb:identifier']) is dict and '#text' in data['ddb:identifier']:
                 self.add_identifier(data['ddb:identifier']['#text'], dataset_uri)
             else:
                 self.add_identifier(data['ddb:identifier'], dataset_uri)
         if 'dcterms:abstract' in data.keys():
             if type(data["dcterms:abstract"]) is list:
                 for abstract in data["dcterms:abstract"]:
-                    self.add_description(abstract['#text'], dataset_uri)
-            elif type(data["dcterms:abstract"]) is dict:
+                    if "#text" in abstract.keys():
+                        self.add_description(abstract['#text'], dataset_uri)
+            elif type(data["dcterms:abstract"]) is dict and "#text" in data["dcterms:abstract"].keys():
                 self.add_description(data["dcterms:abstract"]["#text"], dataset_uri)
         
 
@@ -194,15 +204,21 @@ class dcat_ap(object):
         len_ = len(dataset)
         for i in range(0, len_):
             item = None
+            key = None
             for key in dataset[str(i)].keys():
                 item = dataset[str(i)][key]
-                if key == "paper" or key == "oai_dc:dc":
+                # print(key)
+                if key == "paper":
                     break
+                if  key == "oai_dc:dc":
+                    item = item["oai_dc:dc"]
+                    break
+            if key == "oai_dc:dc":
+                item = item["oai_dc:dc"]
+            # print(item)
             if item is not None:
                 self.add_dataset(item, catalog_uri)
-            if i == 1000:
-                break
-    
+                
     def add_title(self, title, dataset_uri):
         """ add title to dataset
         """
@@ -241,7 +257,7 @@ class dcat_ap(object):
 
     def add_format(self, format, dataset_uri):
         """add format to graph"""
-        self.graph.add((dataset_uri, self.DCTERMS.format, Literal(format)))
+        self.graph.add((dataset_uri, self.DCTERMS.Format, Literal(format)))
 
     def add_rights(self, right, dataset_uri):
         """add rights to graph"""

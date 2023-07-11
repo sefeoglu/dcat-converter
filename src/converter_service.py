@@ -19,4 +19,4 @@ class converterService(object):
 
 
 if __name__ == '__main__':
-    service = converterService("HU  Berlin EDOC", "https://edoc.hu-berlin.de/", "hu-edoc.json","hu_berlin_catalog.rdf")
+    service = converterService("FU Berlin Refubium", "https://refubium.fu-berlin.de/", "refubium-repo.json","fu_berlin_catalog_1.rdf")
