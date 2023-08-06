@@ -13,3 +13,4 @@ The project converts the oai_dc formatted meta data into dcat_ap format and save
     ├── dcat_ap.py           
     └── utils.py
 ````
+* Note:Poster paper from the project has been submitted and waiting for the review, so we will update the readme later.
