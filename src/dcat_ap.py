@@ -35,7 +35,7 @@ class dcat_ap(object):
         dataset_uri = BNode()
         self.graph.add((dataset_uri, self.RDF.type, self.DCAT.Dataset))
         self.graph.add((catalog_uri, self.DCAT.Dataset, dataset_uri))
-
+        # title
         if "dc:title" in data.keys():
             if type(data['dc:title']) is list:
                 for title in data['dc:title']:
@@ -48,7 +48,7 @@ class dcat_ap(object):
             else:
                 self.add_title(data['dc:title'], dataset_uri)
 
-        
+        #creator
         if "dc:creator" in data.keys():
             if type(data['dc:creator']) is list:
                 for creator in data['dc:creator']:
@@ -63,27 +63,29 @@ class dcat_ap(object):
             else:
                 self.add_creator(data['dc:creator'], dataset_uri)
         
-        
+        # subject
         if "dc:subject" in data.keys():
-            
             if type(data['dc:subject']) is list:
+
                 for subject in data['dc:subject']:
-                    
+    
                     if type(subject) is dict and "#text" in subject.keys():
                         if subject['@xsi:type'] == 'xMetaDiss:noScheme':
                             if subject['#text'] != "{'@xsi:type': 'xMetaDiss:noScheme'}":
-                                self.add_subject(subject['#text'], dataset_uri)
+                                self.add_subject(self.normalize_subject(subject['#text']), dataset_uri)
+
                     elif "ddc:" not in subject:
-                        if subject != "{'@xsi:type': 'xMetaDiss:noScheme'}":
-                            self.add_subject(subject, dataset_uri)
+                        if type(subject) is str and subject != "{'@xsi:type': 'xMetaDiss:noScheme'}":
+                            self.add_subject(self.normalize_subject(subject), dataset_uri)
+
             elif type(data['dc:subject']) is dict and "#text" in data['dc:subject'].keys():
                 if data['dc:subject']['@xsi:type'] == 'xMetaDiss:noScheme':
                     if data['dc:subject']['#text'] != "{'@xsi:type': 'xMetaDiss:noScheme'}":
-                        self.add_subject(data['dc:subject']['#text'], dataset_uri)
+                        self.add_subject(self.normalize_subject(data['dc:subject']['#text']), dataset_uri)
             else:
                 if data['dc:subject'] != "{'@xsi:type': 'xMetaDiss:noScheme'}":
-                    self.add_subject(data['dc:subject'], dataset_uri)
-        
+                    self.add_subject(self.normalize_subject(data['dc:subject']), dataset_uri)
+        # description
         if "dc:description" in data.keys():
             if type(data['dc:description']) is list:
                 for description in data['dc:description']:
@@ -93,7 +95,7 @@ class dcat_ap(object):
             else:
                 self.add_description(data['dc:description'], dataset_uri)
 
-        
+        # date
         if "dc:date" in data.keys():
             if type(data['dc:date']) is list:
                self.add_issued(data['dc:date'][0], dataset_uri)
@@ -102,7 +104,7 @@ class dcat_ap(object):
                 self.add_issued(data['dc:date']['#text'], dataset_uri)
             else:
                 self.add_issued(data['dc:date'], dataset_uri)
-
+        # type
         if "dc:type" in data.keys():
             if type(data['dc:type']) is list:
                 for type_ in data['dc:type']:
@@ -111,7 +113,7 @@ class dcat_ap(object):
                 self.add_type(data['dc:type']['#text'], dataset_uri)
             else:
                 self.add_type(data['dc:type'], dataset_uri)
-
+        # format
         if "dc:format" in data.keys():
             if type(data['dc:format']) is list:
                 for format_ in data['dc:format']:
@@ -121,7 +123,7 @@ class dcat_ap(object):
                 self.add_format(data['dc:format']['#text'], dataset_uri)
             else:
                 self.add_format(data['dc:format'], dataset_uri)
-        
+        # rights
         if "dc:rights" in data.keys():
             if type(data['dc:rights']) is list:
                 for rights in data['dc:rights']:
@@ -131,7 +133,7 @@ class dcat_ap(object):
             else:
                 self.add_rights(data['dc:rights'], dataset_uri)
         
-
+        # created
         if "dcterms:created" in data.keys():
             if type(data['dcterms:created']) is list:
                 for created in data['dcterms:created']:
@@ -143,7 +145,7 @@ class dcat_ap(object):
                 self.add_issued(data['dcterms:created']['#text'], dataset_uri)
             else:
                 self.add_issued(data['dcterms:created'], dataset_uri)
-        
+        # dateSubmitted
         if "dcterms:dateSubmitted" in data.keys():
             if type(data["dcterms:dateSubmitted"]) is list:
                 for date in data["dcterms:dateSubmitted"]:
@@ -155,7 +157,7 @@ class dcat_ap(object):
                 self.add_modified(data["dcterms:dateSubmitted"]['#text'], dataset_uri)
             else:
                 self.add_modified(data["dcterms:dateSubmitted"], dataset_uri)
-
+        # identifier
         if "ddb:identifier" in data.keys():
             if type(data['ddb:identifier']) is list:
                 for identifier in data['ddb:identifier']:
@@ -167,6 +169,7 @@ class dcat_ap(object):
                 self.add_identifier(data['ddb:identifier']['#text'], dataset_uri)
             else:
                 self.add_identifier(data['ddb:identifier'], dataset_uri)
+        # abstract
         if 'dcterms:abstract' in data.keys():
             if type(data["dcterms:abstract"]) is list:
                 for abstract in data["dcterms:abstract"]:
@@ -175,7 +178,7 @@ class dcat_ap(object):
             elif type(data["dcterms:abstract"]) is dict and "#text" in data["dcterms:abstract"].keys():
                 self.add_description(data["dcterms:abstract"]["#text"], dataset_uri)
         
-
+        # language
         if "dc:language" in data.keys():
             if type(data['dc:language']) is list:
                 for language in data['dc:language']:
@@ -184,7 +187,7 @@ class dcat_ap(object):
                 self.add_language(data['dc:language']['#text'], dataset_uri)
             else: 
                 self.add_language(data['dc:language'], dataset_uri)
-        
+        # identifier
         if "dc:identifier" in data.keys():
             if type(data['dc:identifier']) is list:
                 for identifier in data['dc:identifier']:
@@ -276,8 +279,16 @@ class dcat_ap(object):
         """save graph to file"""
         self.graph.serialize(destination=filepath, format='pretty-xml')
 
-
-if __name__ == "__main__":
-    dcat = dcat_ap()
-    dcat.add_catalog()
-    dcat.save_graph()
+    def normalize_subject(self, subject):
+        """convert subject to lower case and remove special characters
+        Args:
+            subject (str): keywords about the dataset
+        return:
+            str: the lower case version of the subject.
+        """
+        return str(subject).lower().replace("_", " ").replace("-", " ")
+    
+# if __name__ == "__main__":
+#     dcat = dcat_ap()
+#     dcat.add_catalog()
+#     dcat.save_graph()
