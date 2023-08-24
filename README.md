@@ -9,12 +9,18 @@ The project converts the oai_dc formatted meta data into dcat_ap format and save
 * Project Folder Structure
 ````
 .
+├── Dockerfile
 ├── LICENSE
 ├── README.md
+├── compose.yaml
+├── config.ini
 ├── data
+│   └── sample.rdf
+├── requirements.txt
 └── src
-    ├── converter_service.py 
-    ├── dcat_ap.py           
+    ├── converter_service.py
+    ├── data_crawler.py
+    ├── dcat_ap.py
     └── utils.py
 ````
 ## Docker 
