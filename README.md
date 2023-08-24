@@ -21,8 +21,7 @@ The project converts the oai_dc formatted meta data into dcat_ap format and save
 
 * ```docker build --tag dcat_converter .```
 
-* ```docker run  --publish 8000:5000 dcat_converter```
-
+WIP!
 ## Data Collection
 Run the scprit below:
 ``` 
