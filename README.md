@@ -45,5 +45,4 @@ python data_crawler.py "https://api-depositonce.tu-berlin.de/server/oai/request?
  python data_crawler.py "https://edoc.hu-berlin.de/oai/request/?verb=ListRecords&resumptionToken=oai_dc////" 100 25696
 ```
 
-* Note:Poster paper from the project has been submitted and waiting for the review, so we will update the readme later.
-
+* Note:Poster paper from the project has been submitted and waiting for the review, so we will update the readme later. The project will be released, so the repository was updated.
