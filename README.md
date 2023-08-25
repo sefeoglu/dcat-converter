@@ -1,4 +1,4 @@
-# DCAT_AP converter
+# DCAT Converter
 The project converts the oai_dc formatted meta data into dcat_ap format and save them in rdf format.
 
 
