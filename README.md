@@ -38,9 +38,11 @@ pip install -r requirements.txt
 ```
 WIP!
 ## Data Collection
-Run the scprit below:
+* Give the parameters for the APIs in ```config.ini```
+  
+* Run the scprit below:
 ``` 
-python data_crawler.py api_url number_of_records_in_a_page total_number_of_records
+python data_crawler.py
 ```
 
 ## Repository APIs
