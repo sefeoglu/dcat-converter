@@ -2,8 +2,7 @@
 The project converts the oai_dc formatted meta data into dcat_ap format and save them in rdf format.
 
 
-
-* Project Folder Structure
+## Project Folder Structure
 ````
 .
 ├── Dockerfile
@@ -19,7 +18,7 @@ The project converts the oai_dc formatted meta data into dcat_ap format and save
     ├── data_crawler.py
     ├── dcat_ap.py
     └── utils.py
-
+````
 ## Run
 * Create a conda environment
 
