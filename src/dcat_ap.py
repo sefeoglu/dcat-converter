@@ -117,7 +117,7 @@ class dcat_ap(object):
         if "dc:format" in data.keys():
             if type(data['dc:format']) is list:
                 for format_ in data['dc:format']:
-                    print(format_)
+                    # print(format_)
                     self.add_format(format_, dataset_uri)
             elif type(data['dc:format']) is dict:
                 self.add_format(data['dc:format']['#text'], dataset_uri)

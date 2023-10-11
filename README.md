@@ -5,10 +5,9 @@ The project converts the oai_dc formatted meta data into dcat_ap format and save
 ## Project Folder Structure
 ````
 .
-├── Dockerfile
 ├── LICENSE
 ├── README.md
-├── compose.yaml
+├── configs --> all the config.ini files of the repositories.
 ├── config.ini
 ├── data
 │   └── sample.rdf
@@ -36,19 +35,27 @@ $ conda activate dcat_env
 ```
 pip install -r requirements.txt
 ```
-WIP!
-## Data Collection
-* Give the parameters for the APIs in ```config.ini```
+
+*  ```config_reponame.ini``` has the specific data crawling parameters.
+First copy the config file of the repository into ```config.ini``` for a repository that you would like to work.
+Then, run the steps below for only one repository.
+After finishing the steps, repeat them for other repository.
+
+## 1. Change the config.ini
+* copy the config_reponame's content into ```config.ini``` for the repository
+
+## 2. Data Collection
+
   
 * Run the scprit below:
 ``` 
-python data_crawler.py
+python src/data_crawler.py
 ```
 
-## Converter:
+## 2. Converter:
 * Run the script below:
 ```
-python converter_service.py
+python src/converter_service.py
 ```
 
 ## Repository APIs
