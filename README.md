@@ -45,6 +45,12 @@ WIP!
 python data_crawler.py
 ```
 
+## Converter:
+* Run the script below:
+```
+python converter_service.py
+```
+
 ## Repository APIs
 * 1.) Refubium Repository
 
