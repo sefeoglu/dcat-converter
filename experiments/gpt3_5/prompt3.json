@@ -1,0 +1,33 @@
+{
+    "Ontology1": {
+      "title": "dc:title",
+      "creator": "dc:creator",
+      "subject": "dc:subject",
+      "description": "dc:description",
+      "publisher": "dc:publisher",
+      "contributor": "dc:contributor",
+      "date": "dc:date",
+      "type": "dc:type",
+      "format": "dc:format",
+      "identifier": "dc:identifier",
+      "source": "dc:source",
+      "language": "dc:language",
+      "relation": "dc:relation",
+      "coverage": "dc:coverage",
+      "rights": "dc:rights",
+      "alternative": "title",
+      "tableOfContents": "description",
+      "abstract": "description",
+      "created": "date",
+      "valid": "date",
+      "available": "date",
+      "issued": "date",
+      "modified": "date",
+      "dateAccepted": "date",
+      "dateCopyrighted": "date",
+      "dateSubmitted": "date",
+      "extent": "format",
+      "medium": "format"
+    }
+  }
+  

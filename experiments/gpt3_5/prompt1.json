@@ -1,0 +1,117 @@
+{
+    "Ontology1": [
+      {
+        "element": "title",
+        "correspondence": "dc:title"
+      },
+      {
+        "element": "creator",
+        "correspondence": "dc:creator"
+      },
+      {
+        "element": "subject",
+        "correspondence": "dc:subject"
+      },
+      {
+        "element": "description",
+        "correspondence": "dc:description"
+      },
+      {
+        "element": "publisher",
+        "correspondence": "dc:publisher"
+      },
+      {
+        "element": "contributor",
+        "correspondence": "dc:contributor"
+      },
+      {
+        "element": "date",
+        "correspondence": "dc:date"
+      },
+      {
+        "element": "type",
+        "correspondence": "dc:type"
+      },
+      {
+        "element": "format",
+        "correspondence": "dc:format"
+      },
+      {
+        "element": "identifier",
+        "correspondence": "dc:identifier"
+      },
+      {
+        "element": "source",
+        "correspondence": "dc:source"
+      },
+      {
+        "element": "language",
+        "correspondence": "dc:language"
+      },
+      {
+        "element": "relation",
+        "correspondence": "dc:relation"
+      },
+      {
+        "element": "coverage",
+        "correspondence": "dc:coverage"
+      },
+      {
+        "element": "rights",
+        "correspondence": "dc:rights"
+      },
+      {
+        "element": "alternative",
+        "correspondence": "title"
+      },
+      {
+        "element": "tableOfContents",
+        "correspondence": "description"
+      },
+      {
+        "element": "abstract",
+        "correspondence": "description"
+      },
+      {
+        "element": "date",
+        "correspondence": ["created", "valid", "available", "issued", "modified", "dateAccepted", "dateCopyrighted", "dateSubmitted"]
+      },
+      {
+        "element": "format",
+        "correspondence": ["extent", "medium"]
+      },
+      {
+        "element": "relation",
+        "correspondence": ["isVersionOf", "hasVersion", "isReplacedBy", "replaces", "isRequiredBy", "requires", "isPartOf", "hasPart", "isReferencedBy", "references", "isFormatOf", "hasFormat", "conformsTo"]
+      },
+      {
+        "element": "coverage",
+        "correspondence": ["spatial", "temporal"]
+      },
+      {
+        "element": ["audience", "accrualMethod", "accrualPeriodicity", "accrualPolicy", "instructionalMethod", "provenance", "rightsHolder"],
+        "correspondence": "dc:any"
+      },
+      {
+        "element": "accessRights",
+        "correspondence": "rights"
+      },
+      {
+        "element": "license",
+        "correspondence": "rights"
+      },
+      {
+        "element": "bibliographicCitation",
+        "correspondence": "identifier"
+      },
+      {
+        "element": "mediator",
+        "correspondence": "audience"
+      },
+      {
+        "element": "educationLevel",
+        "correspondence": "audience"
+      }
+    ]
+  }
+  
