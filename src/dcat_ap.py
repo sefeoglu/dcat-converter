@@ -3,7 +3,7 @@ from rdflib import Graph, URIRef, BNode, Literal, Namespace
 
 class dcat_ap(object):
 
-    def __init__(self):
+    def __init__(self, outpath):
         """
         Dcat-ap converter
         """
@@ -24,6 +24,7 @@ class dcat_ap(object):
         self.graph.bind('xsd', self.XSD)
         self.graph.bind('vcard', self.VCARD)
         self.graph.bind('locn', self.LOCN)
+        self.out_path = outpath
 
     def add_dataset(self, data, catalog_uri):
         """ add dataset to graph
@@ -205,22 +206,30 @@ class dcat_ap(object):
         self.graph.add((catalog_uri, self.RDF.type, self.DCAT.Catalog))
         self.graph.add((catalog_uri, self.DCTERMS.title, Literal(title)))
         len_ = len(dataset)
-        for i in range(0, len_):
-            item = None
-            key = None
-            for key in dataset[str(i)].keys():
-                item = dataset[str(i)][key]
-                # print(key)
-                if key == "paper":
-                    break
-                if  key == "oai_dc:dc":
+        # create RDF for
+        count_partion = len_ // 1000
+
+        for file_index in range(0, count_partion):
+        
+            for i in range(file_index*1000, file_index*1000+1000):
+
+                item = None
+                key = None
+                for key in dataset[str(i)].keys():
+                    item = dataset[str(i)][key]
+                    # print(key)
+                    if key == "paper":
+                        break
+                    if  key == "oai_dc:dc":
+                        item = item["oai_dc:dc"]
+                        break
+                if key == "oai_dc:dc":
                     item = item["oai_dc:dc"]
-                    break
-            if key == "oai_dc:dc":
-                item = item["oai_dc:dc"]
-            # print(item)
-            if item is not None:
-                self.add_dataset(item, catalog_uri)
+                # print(item)
+                if item is not None:
+                    self.add_dataset(item, catalog_uri)
+
+            self.save_graph(self.out_path +"_"+ str(file_index) + ".rdf")
                 
     def add_title(self, title, dataset_uri):
         """ add title to dataset
