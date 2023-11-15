@@ -1,0 +1,60 @@
+The correspondences between the elements of the two ontologies are as follows:
+
+* "title" in Ontology1 corresponds to "title" in Ontology2
+* "creator" in Ontology1 corresponds to "creator" in Ontology2
+* "subject" in Ontology1 corresponds to "subject" in Ontology2
+* "description" in Ontology1 corresponds to "description" in Ontology2
+* "publisher" in Ontology1 corresponds to "publisher" in Ontology2
+* "contributor" in Ontology1 corresponds to "contributor" in Ontology2
+* "date" in Ontology1 corresponds to "date" in Ontology2
+* "type" in Ontology1 corresponds to "type" in Ontology2
+* "format" in Ontology1 corresponds to "format" in Ontology2
+* "identifier" in Ontology1 corresponds to "identifier" in Ontology2
+* "source" in Ontology1 corresponds to "source" in Ontology2
+* "language" in Ontology1 corresponds to "language" in Ontology2
+* "relation" in Ontology1 corresponds to "relation" in Ontology2
+* "coverage" in Ontology1 corresponds to "coverage" in Ontology2
+* "rights" in Ontology1 corresponds to "rights" in Ontology2
+* "alternative" in Ontology1 corresponds to "title" in Ontology2
+* "tableOfContents" in Ontology1 corresponds to "description" in Ontology2
+* "abstract" in Ontology1 corresponds to "description" in Ontology2
+* "created" in Ontology1 corresponds to "date" in Ontology2
+* "valid" in Ontology1 corresponds to "date" in Ontology2
+* "available" in Ontology1 corresponds to "date" in Ontology2
+* "issued" in Ontology1 corresponds to "date" in Ontology2
+* "modified" in Ontology1 corresponds to "date" in Ontology2
+* "dateAccepted" in Ontology1 corresponds to "date" in Ontology2
+* "dateCopyrighted" in Ontology1 corresponds to "date" in Ontology2
+* "dateSubmitted" in Ontology1 corresponds to "date" in Ontology2
+* "extent" in Ontology1 corresponds to "format" in Ontology2
+* "medium" in Ontology1 corresponds to "format" in Ontology2
+* "isVersionOf" in Ontology1 corresponds to "relation" in Ontology2
+* "hasVersion" in Ontology1 corresponds to "relation" in Ontology2
+* "isReplacedBy" in Ontology1 corresponds to "relation" in Ontology2
+* "replaces" in Ontology1 corresponds to "relation" in Ontology2
+* "isRequiredBy" in Ontology1 corresponds to "relation" in Ontology2
+* "requires" in Ontology1 corresponds to "relation" in Ontology2
+* "isPartOf" in Ontology1 corresponds to "relation" in Ontology2
+* "hasPart" in Ontology1 corresponds to "relation" in Ontology2
+* "isReferencedBy" in Ontology1 corresponds to "relation" in Ontology2
+* "references" in Ontology1 corresponds to "relation" in Ontology2
+* "isFormatOf" in Ontology1 corresponds to "relation" in Ontology2
+* "hasFormat" in Ontology1 corresponds to "relation" in Ontology2
+* "conformsTo" in Ontology1 corresponds to "relation" in Ontology2
+* "spatial" in Ontology1 corresponds to "coverage" in Ontology2
+* "temporal" in Ontology1 corresponds to "coverage" in Ontology2
+* "audience" in Ontology1 corresponds to "dc:any" in Ontology2
+* "accrualMethod" in Ontology1 corresponds to "dc:any" in Ontology2
+* "accrualPeriodicity" in Ontology1 corresponds to "dc:any" in Ontology2
+* "accrualPolicy" in Ontology1 corresponds to "dc:any" in Ontology2
+* "instructionalMethod" in Ontology1 corresponds to "dc:any" in Ontology2
+* "provenance" in Ontology1 corresponds to "dc:any" in Ontology2
+* "rightsHolder" in Ontology1 corresponds to "dc:any" in Ontology2
+* "mediator" in Ontology1 corresponds to "audience" in Ontology2
+* "educationLevel" in Ontology1 corresponds to "audience" in Ontology2
+* "accessRights" in Ontology1 corresponds to "rights" in Ontology2
+* "license" in Ontology1 corresponds to "rights" in Ontology2
+* "bibliographicCitation" in Ontology1 corresponds to "identifier" in Ontology2
+
+Note that some of the correspondences are not one-to-one, meaning that there are multiple elements in Ontology1 that correspond to the same element in Ontology2, 
+or multiple elements in Ontology2 that correspond to the same element in Ontology1.

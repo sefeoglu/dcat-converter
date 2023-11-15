@@ -1,27 +1,27 @@
-Ontology alignment is to find the correspondeces between ontology 1 and ontology2.
+Ontology alignment is to find the correspondences between ontology 1 and ontology2.
 
 Ontology1 has the following elements:
- <xs:element name="title" substitutionGroup="any"/>
-  <xs:element name="creator" substitutionGroup="any"/>
-  <xs:element name="subject" substitutionGroup="any"/>
-  <xs:element name="description" substitutionGroup="any"/>
-  <xs:element name="publisher" substitutionGroup="any"/>
-  <xs:element name="contributor" substitutionGroup="any"/>
-  <xs:element name="date" substitutionGroup="any"/>
-  <xs:element name="type" substitutionGroup="any"/>
-  <xs:element name="format" substitutionGroup="any"/>
-  <xs:element name="identifier" substitutionGroup="any"/>
-  <xs:element name="source" substitutionGroup="any"/>
-  <xs:element name="language" substitutionGroup="any"/>
-  <xs:element name="relation" substitutionGroup="any"/>
-  <xs:element name="coverage" substitutionGroup="any"/>
-  <xs:element name="rights" substitutionGroup="any"/>
-  .
+		<xs:sequence>
+			<xs:element ref="dct:title" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="dct:description" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="dct:publisher" minOccurs="0" maxOccurs="1"/>
+			<xs:element ref="foaf:homepage" minOccurs="0" maxOccurs="1"/>
+			<xs:element ref="dct:license" minOccurs="0" maxOccurs="1"/>
+			<xs:element ref="dct:language" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="dct:issued" minOccurs="0" maxOccurs="1"/>
+			<xs:element ref="dct:modified" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="themeTaxonomy" type="skos:ConceptScheme" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="dct:hasPart" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="dct:isPartOf" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="record" type="dcat:CatalogRecord" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="dct:rights" minOccurs="0" maxOccurs="1"/>
+			<xs:element ref="dct:spatial" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="dataset" type="dcat:Dataset" minOccurs="1" maxOccurs="unbounded"/>
+		</xs:sequence>
+		
+Ontology2 has the following elements:
 
-  For an element in the first ontology, which element in ontology 2 is the best match?
-
-  Ontology 2 has the following elements:
-     <xs:element name="title" substitutionGroup="dc:title"/>
+   <xs:element name="title" substitutionGroup="dc:title"/>
    <xs:element name="creator" substitutionGroup="dc:creator"/>
    <xs:element name="subject" substitutionGroup="dc:subject"/>
    <xs:element name="description" substitutionGroup="dc:description"/>
@@ -86,5 +86,5 @@ Ontology1 has the following elements:
    <xs:element name="license" substitutionGroup="rights"/>
 
    <xs:element name="bibliographicCitation" substitutionGroup="identifier"/>
-  .
-  
+   .
+ Find all the correspondences.

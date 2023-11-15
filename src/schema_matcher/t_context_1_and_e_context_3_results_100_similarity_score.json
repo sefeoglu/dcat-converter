@@ -1,0 +1,12 @@
+[
+    "Result = similarity score",
+    "Result: 0.0",
+    "Result = similarity score",
+    "Result: The similarity score between 'Title' and 'Description' cannot be computed as they are two different types of information.",
+    "Result: The similarity score between 'Title' and 'Publisher' is 0.",
+    "Result: The similarity score between 'Title' and 'Contributor' is 0.",
+    "Result = similarity score cannot be determined without comparing the specific content of the 'Title' and 'Date' in question.",
+    "Result = 0.0",
+    "Result: The similarity score between 'Title' and 'Format' is 0.",
+    "Result = 0.5"
+]

@@ -1,104 +1,18 @@
 {
-    "Ontology1ToOntology2Mappings": [
-        {
-            "Ontology1ClassOrProperty": "title",
-            "Ontology2ClassOrProperty": "dc:title"
-        },
-        {
-            "Ontology1ClassOrProperty": "creator",
-            "Ontology2ClassOrProperty": "dc:creator"
-        },
-        {
-            "Ontology1ClassOrProperty": "subject",
-            "Ontology2ClassOrProperty": "dc:subject"
-        },
-        {
-            "Ontology1ClassOrProperty": "description",
-            "Ontology2ClassOrProperty": "dc:description"
-        },
-        {
-            "Ontology1ClassOrProperty": "publisher",
-            "Ontology2ClassOrProperty": "dc:publisher"
-        },
-        {
-            "Ontology1ClassOrProperty": "contributor",
-            "Ontology2ClassOrProperty": "dc:contributor"
-        },
-        {
-            "Ontology1ClassOrProperty": "date",
-            "Ontology2ClassOrProperty": "dc:date"
-        },
-        {
-            "Ontology1ClassOrProperty": "type",
-            "Ontology2ClassOrProperty": "dc:type"
-        },
-        {
-            "Ontology1ClassOrProperty": "format",
-            "Ontology2ClassOrProperty": "dc:format"
-        },
-        {
-            "Ontology1ClassOrProperty": "identifier",
-            "Ontology2ClassOrProperty": "dc:identifier"
-        },
-        {
-            "Ontology1ClassOrProperty": "source",
-            "Ontology2ClassOrProperty": "dc:source"
-        },
-        {
-            "Ontology1ClassOrProperty": "language",
-            "Ontology2ClassOrProperty": "dc:language"
-        },
-        {
-            "Ontology1ClassOrProperty": "relation",
-            "Ontology2ClassOrProperty": "dc:relation"
-        },
-        {
-            "Ontology1ClassOrProperty": "coverage",
-            "Ontology2ClassOrProperty": "dc:coverage"
-        },
-        {
-            "Ontology1ClassOrProperty": "rights",
-            "Ontology2ClassOrProperty": "dc:rights"
-        },
-        {
-            "Ontology1ClassOrProperty": "alternative",
-            "Ontology2ClassOrProperty": "title"
-        },
-        {
-            "Ontology1ClassOrProperty": "tableOfContents",
-            "Ontology2ClassOrProperty": "description"
-        },
-        {
-            "Ontology1ClassOrProperty": "abstract",
-            "Ontology2ClassOrProperty": "description"
-        },
-        {
-            "Ontology1ClassOrProperty": "date",
-            "Ontology2ClassOrProperty": "created, valid, available, issued, modified, dateAccepted, dateCopyrighted, dateSubmitted"
-        },
-        {
-            "Ontology1ClassOrProperty": "format",
-            "Ontology2ClassOrProperty": "extent, medium"
-        },
-        {
-            "Ontology1ClassOrProperty": "relation",
-            "Ontology2ClassOrProperty": "isVersionOf, hasVersion, isReplacedBy, replaces, isRequiredBy, requires, isPartOf, hasPart, isReferencedBy, references, isFormatOf, hasFormat, conformsTo"
-        },
-        {
-            "Ontology1ClassOrProperty": "coverage",
-            "Ontology2ClassOrProperty": "spatial, temporal"
-        },
-        {
-            "Ontology1ClassOrProperty": "audience, accrualMethod, accrualPeriodicity, accrualPolicy, instructionalMethod, provenance, rightsHolder",
-            "Ontology2ClassOrProperty": "dc:any"
-        },
-        {
-            "Ontology1ClassOrProperty": "accessRights, license",
-            "Ontology2ClassOrProperty": "rights"
-        },
-        {
-            "Ontology1ClassOrProperty": "bibliographicCitation",
-            "Ontology2ClassOrProperty": "identifier"
-        }
-    ]
-}
+    "title": "dc:title",
+    "creator": "dc:creator",
+    "subject": "dc:subject",
+    "description": "dc:description",
+    "publisher": "dc:publisher",
+    "contributor": "dc:contributor",
+    "date": "dc:date",
+    "type": "dc:type",
+    "format": "dc:format",
+    "identifier": "dc:identifier",
+    "source": "dc:source",
+    "language": "dc:language",
+    "relation": "dc:relation",
+    "coverage": "dc:coverage",
+    "rights": "dc:rights"
+  }
+  

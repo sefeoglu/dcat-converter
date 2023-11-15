@@ -1,0 +1,277 @@
+[
+    {
+        "URI": "http://purl.org/dc/terms/title",
+        "basic": "Title",
+        "context_1": "Title: A name given to the resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/creator",
+        "basic": "Creator",
+        "context_1": "Creator: An entity responsible for making the resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/subject",
+        "basic": "Subject",
+        "context_1": "Subject: A topic of the resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/description",
+        "basic": "Description",
+        "context_1": "Description: An account of the resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/publisher",
+        "basic": "Publisher",
+        "context_1": "Publisher: An entity responsible for making the resource available."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/contributor",
+        "basic": "Contributor",
+        "context_1": "Contributor: An entity responsible for making contributions to the resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/date",
+        "basic": "Date",
+        "context_1": "Date: A point or period of time associated with an event in the lifecycle of the resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/type",
+        "basic": "Type",
+        "context_1": "Type: The nature or genre of the resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/format",
+        "basic": "Format",
+        "context_1": "Format: The file format, physical medium, or dimensions of the resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/identifier",
+        "basic": "Identifier",
+        "context_1": "Identifier: An unambiguous reference to the resource within a given context."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/source",
+        "basic": "Source",
+        "context_1": "Source: A related resource from which the described resource is derived."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/language",
+        "basic": "Language",
+        "context_1": "Language: A language of the resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/relation",
+        "basic": "Relation",
+        "context_1": "Relation: A related resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/coverage",
+        "basic": "Coverage",
+        "context_1": "Coverage: The spatial or temporal topic of the resource, spatial applicability of the resource, or jurisdiction under which the resource is relevant."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/rights",
+        "basic": "Rights",
+        "context_1": "Rights: Information about rights held in and over the resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/alternative",
+        "basic": "Alternative Title",
+        "context_1": "Alternative Title: An alternative name for the resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/tableOfContents",
+        "basic": "Table Of Contents",
+        "context_1": "Table Of Contents: A list of subunits of the resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/abstract",
+        "basic": "Abstract",
+        "context_1": "Abstract: A summary of the resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/created",
+        "basic": "Date Created",
+        "context_1": "Date Created: Date of creation of the resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/valid",
+        "basic": "Date Valid",
+        "context_1": "Date Valid: Date (often a range) of validity of a resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/available",
+        "basic": "Date Available",
+        "context_1": "Date Available: Date that the resource became or will become available."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/issued",
+        "basic": "Date Issued",
+        "context_1": "Date Issued: Date of formal issuance of the resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/modified",
+        "basic": "Date Modified",
+        "context_1": "Date Modified: Date on which the resource was changed."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/dateAccepted",
+        "basic": "Date Accepted",
+        "context_1": "Date Accepted: Date of acceptance of the resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/dateCopyrighted",
+        "basic": "Date Copyrighted",
+        "context_1": "Date Copyrighted: Date of copyright of the resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/dateSubmitted",
+        "basic": "Date Submitted",
+        "context_1": "Date Submitted: Date of submission of the resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/extent",
+        "basic": "Extent",
+        "context_1": "Extent: The size or duration of the resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/medium",
+        "basic": "Medium",
+        "context_1": "Medium: The material or physical carrier of the resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/isVersionOf",
+        "basic": "Is Version Of",
+        "context_1": "Is Version Of: A related resource of which the described resource is a version, edition, or adaptation."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/hasVersion",
+        "basic": "Has Version",
+        "context_1": "Has Version: A related resource that is a version, edition, or adaptation of the described resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/isReplacedBy",
+        "basic": "Is Replaced By",
+        "context_1": "Is Replaced By: A related resource that supplants, displaces, or supersedes the described resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/replaces",
+        "basic": "Replaces",
+        "context_1": "Replaces: A related resource that is supplanted, displaced, or superseded by the described resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/isRequiredBy",
+        "basic": "Is Required By",
+        "context_1": "Is Required By: A related resource that requires the described resource to support its function, delivery, or coherence."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/requires",
+        "basic": "Requires",
+        "context_1": "Requires: A related resource that is required by the described resource to support its function, delivery, or coherence."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/isPartOf",
+        "basic": "Is Part Of",
+        "context_1": "Is Part Of: A related resource in which the described resource is physically or logically included."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/hasPart",
+        "basic": "Has Part",
+        "context_1": "Has Part: A related resource that is included either physically or logically in the described resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/isReferencedBy",
+        "basic": "Is Referenced By",
+        "context_1": "Is Referenced By: A related resource that references, cites, or otherwise points to the described resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/references",
+        "basic": "References",
+        "context_1": "References: A related resource that is referenced, cited, or otherwise pointed to by the described resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/isFormatOf",
+        "basic": "Is Format Of",
+        "context_1": "Is Format Of: A pre-existing related resource that is substantially the same as the described resource, but in another format."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/hasFormat",
+        "basic": "Has Format",
+        "context_1": "Has Format: A related resource that is substantially the same as the pre-existing described resource, but in another format."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/conformsTo",
+        "basic": "Conforms To",
+        "context_1": "Conforms To: An established standard to which the described resource conforms."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/spatial",
+        "basic": "Spatial Coverage",
+        "context_1": "Spatial Coverage: Spatial characteristics of the resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/temporal",
+        "basic": "Temporal Coverage",
+        "context_1": "Temporal Coverage: Temporal characteristics of the resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/audience",
+        "basic": "Audience",
+        "context_1": "Audience: A class of agents for whom the resource is intended or useful."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/accrualMethod",
+        "basic": "Accrual Method",
+        "context_1": "Accrual Method: The method by which items are added to a collection."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/accrualPeriodicity",
+        "basic": "Accrual Periodicity",
+        "context_1": "Accrual Periodicity: The frequency with which items are added to a collection."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/accrualPolicy",
+        "basic": "Accrual Policy",
+        "context_1": "Accrual Policy: The policy governing the addition of items to a collection."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/instructionalMethod",
+        "basic": "Instructional Method",
+        "context_1": "Instructional Method: A process, used to engender knowledge, attitudes and skills, that the described resource is designed to support."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/provenance",
+        "basic": "Provenance",
+        "context_1": "Provenance: A statement of any changes in ownership and custody of the resource since its creation that are significant for its authenticity, integrity, and interpretation."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/rightsHolder",
+        "basic": "Rights Holder",
+        "context_1": "Rights Holder: A person or organization owning or managing rights over the resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/mediator",
+        "basic": "Mediator",
+        "context_1": "Mediator: An entity that mediates access to the resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/educationLevel",
+        "basic": "Audience Education Level",
+        "context_1": "Audience Education Level: A class of agents, defined in terms of progression through an educational or training context, for which the described resource is intended."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/accessRights",
+        "basic": "Access Rights",
+        "context_1": "Access Rights: Information about who access the resource or an indication of its security status."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/license",
+        "basic": "License",
+        "context_1": "License: A legal document giving official permission to do something with the resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/bibliographicCitation",
+        "basic": "Bibliographic Citation",
+        "context_1": "Bibliographic Citation: A bibliographic reference for the resource."
+    }
+]

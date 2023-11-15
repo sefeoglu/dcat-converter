@@ -18,7 +18,6 @@ Ontology1 has the following elements:
   <xs:element name="rights" substitutionGroup="any"/>
   .
 
-  For an element in the first ontology, which element in ontology 2 is the best match?
 
   Ontology 2 has the following elements:
      <xs:element name="title" substitutionGroup="dc:title"/>
@@ -87,4 +86,4 @@ Ontology1 has the following elements:
 
    <xs:element name="bibliographicCitation" substitutionGroup="identifier"/>
   .
-  
+  Find all the correspondences.

@@ -1,4 +1,5 @@
 Ontology alignment is to find the correspondeces between ontology 1 and ontology2.
+
 Ontology1 has the following elements:
  <xs:element name="title" substitutionGroup="any"/>
   <xs:element name="creator" substitutionGroup="any"/>
@@ -83,4 +84,5 @@ Ontology1 has the following elements:
 
    <xs:element name="bibliographicCitation" substitutionGroup="identifier"/>
   .
+
   Please find the correspondences between ontology 1 and ontology 2.

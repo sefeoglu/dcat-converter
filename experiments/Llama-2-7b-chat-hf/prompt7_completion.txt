@@ -1,0 +1,5 @@
+Answer:
+The best match for an element in Ontology1 is an element in Ontology2 that has the same name and the same substitution group. 
+For example, if the element in Ontology1 is "title", the best match in Ontology2 is "title" with substitution group "dc:title".
+
+Note that some elements in Ontology2 have multiple names and substitution groups, so you may need to examine the specific elements in each ontology to determine the best match.

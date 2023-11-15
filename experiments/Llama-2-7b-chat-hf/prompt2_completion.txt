@@ -1,0 +1,59 @@
+Note:
+
+* The ontologies are represented in XML format.
+* The elements of the ontologies are represented as XML elements.
+* The substitution groups are represented as XML attributes.
+* The correspondence between the elements of the two ontologies is represented as a mapping between the element names.
+* The mapping is represented as a list of tuples, where each tuple contains the element name of the first ontology and the element name of the second ontology that corresponds to it.
+
+For example, the correspondence between the elements of the two ontologies might look like this:
+
+* "title" in Ontology 1 corresponds to "title" in Ontology 2.
+* "creator" in Ontology 1 corresponds to "creator" in Ontology 2.
+* "subject" in Ontology 1 corresponds to "subject" in Ontology 2.
+* "description" in Ontology 1 corresponds to "description" in Ontology 2.
+* "publisher" in Ontology 1 corresponds to "publisher" in Ontology 2.
+* "contributor" in Ontology 1 corresponds to "contributor" in Ontology 2.
+* "date" in Ontology 1 corresponds to "date" in Ontology 2.
+* "type" in Ontology 1 corresponds to "type" in Ontology 2.
+* "format" in Ontology 1 corresponds to "format" in Ontology 2.
+* "identifier" in Ontology 1 corresponds to "identifier" in Ontology 2.
+* "source" in Ontology 1 corresponds to "source" in Ontology 2.
+* "language" in Ontology 1 corresponds to "language" in Ontology 2.
+* "relation" in Ontology 1 corresponds to "relation" in Ontology 2.
+* "coverage" in Ontology 1 corresponds to "coverage" in Ontology 2.
+* "rights" in Ontology 1 corresponds to "rights" in Ontology 2.
+* "alternative" in Ontology 1 corresponds to "title" in Ontology 2.
+* "tableOfContents" in Ontology 1 corresponds to "description" in Ontology 2.
+* "abstract" in Ontology 1 corresponds to "description" in Ontology 2.
+* "created" in Ontology 1 corresponds to "date" in Ontology 2.
+* "valid" in Ontology 1 corresponds to "date" in Ontology 2.
+* "available" in Ontology 1 corresponds to "date" in Ontology 2.
+* "issued" in Ontology 1 corresponds to "date" in Ontology 2.
+* "modified" in Ontology 1 corresponds to "date" in Ontology 2.
+* "dateAccepted" in Ontology 1 corresponds to "date" in Ontology 2.
+* "dateCopyrighted" in Ontology 1 corresponds to "date" in Ontology 2.
+* "dateSubmitted" in Ontology 1 corresponds to "date" in Ontology 2.
+* "extent" in Ontology 1 corresponds to "format" in Ontology 2.
+* "medium" in Ontology 1 corresponds to "format" in Ontology 2.
+* "isVersionOf" in Ontology 1 corresponds to "relation" in Ontology 2.
+* "hasVersion" in Ontology 1 corresponds to "relation" in Ontology 2.
+* "isReplacedBy" in Ontology 1 corresponds to "relation" in Ontology 2.
+* "replaces" in Ontology 1 corresponds to "relation" in Ontology 2.
+* "isRequiredBy" in Ontology 1 corresponds to "relation" in Ontology 2.
+* "requires" in Ontology 1 corresponds to "relation" in Ontology 2.
+* "isPartOf" in Ontology 1 corresponds to "relation" in Ontology 2.
+* "hasPart" in Ontology 1 corresponds to "relation" in Ontology 2.
+* "isReferencedBy" in Ontology 1 corresponds to "relation" in Ontology 2.
+* "references" in Ontology 1 corresponds to "relation" in Ontology 2.
+* "isFormatOf" in Ontology 1 corresponds to "relation" in Ontology 2.
+* "hasFormat" in Ontology 1 corresponds to "relation" in Ontology 2.
+* "conformsTo" in Ontology 1 corresponds to "relation" in Ontology 2.
+* "spatial" in Ontology 1 corresponds to "coverage" in Ontology 2.
+* "temporal" in Ontology 1 corresponds to "coverage" in Ontology 2.
+
+This correspondence can be used to align the elements of the two ontologies, by mapping the elements of Ontology 1 to the elements of Ontology 2. For example, the "title" element in Ontology 1 can be mapped to the "title" element in Ontology 2, the "creator" element in Ontology 1 can be mapped to the "creator" element in Ontology 2, and so on.
+
+Once the elements of the two ontologies have been aligned, the correspondence between the elements can be used to create a unified ontology that combines the elements of the two ontologies. This unified ontology can be used to represent the shared concepts and relationships of the two ontologies, and can be used to provide a common framework for representing and sharing data between the two systems.
+
+In summary, the alignment of ontologies involves finding the correspondence between the elements of two ontologies, and mapping the

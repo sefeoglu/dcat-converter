@@ -1,0 +1,38 @@
+Note: Some elements in ontology 2 are not present in ontology 1.
+
+Here are the correspondences between ontology 1 and ontology 2:
+
+1. title - corresponds to dc:title in ontology 2
+2. creator - corresponds to dc:creator in ontology 2
+3. subject - corresponds to dc:subject in ontology 2
+4. description - corresponds to dc:description in ontology 2
+5. publisher - corresponds to dc:publisher in ontology 2
+6. contributor - corresponds to dc:contributor in ontology 2
+7. date - corresponds to dc:date in ontology 2
+8. type - corresponds to dc:type in ontology 2
+9. format - corresponds to dc:format in ontology 2
+10. identifier - corresponds to dc:identifier in ontology 2
+11. source - corresponds to dc:source in ontology 2
+12. language - corresponds to dc:language in ontology 2
+13. relation - corresponds to dc:relation in ontology 2
+14. coverage - corresponds to dc:coverage in ontology 2
+15. rights - corresponds to dc:rights in ontology 2
+16. alternative - corresponds to title in ontology 2
+17. tableOfContents - corresponds to description in ontology 2
+18. abstract - corresponds to description in ontology 2
+19. created - corresponds to date in ontology 2
+20. valid - corresponds to date in ontology 2
+21. available - corresponds to date in ontology 2
+22. issued - corresponds to date in ontology 2
+23. modified - corresponds to date in ontology 2
+24. dateAccepted - corresponds to date in ontology 2
+25. dateCopyrighted - corresponds to date in ontology 2
+26. dateSubmitted - corresponds to date in ontology 2
+27. extent - corresponds to format in ontology 2
+28. medium - corresponds to format in ontology 2
+29. isVersionOf - corresponds to relation in ontology 2
+30. hasVersion - corresponds to relation in ontology 2
+
+Note: Some elements in ontology 2 are not present in ontology 1, such as "audience", "accrualMethod", "accrualPeriodicity", "accrualPolicy", "instructionalMethod", "provenance", "rightsHolder", "mediator", "educationLevel", "accessRights", and "license".
+
+Please let me know if you need more information.
