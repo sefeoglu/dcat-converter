@@ -32,10 +32,10 @@ class converterService(object):
     def convert(self):
         """ Convert the json file to rdf file
         """
-        dcat_ap_ins = dcat_ap()
+        dcat_ap_ins = dcat_ap(self.out_path)
         # data_item = self.data["0"]['publication']['oai_dc:dc']
         dcat_ap_ins.add_catalog(self.data, self.catalog_uri, self.catalog_title )
-        dcat_ap_ins.save_graph(self.out_path)
+   
 
 
 if __name__ == '__main__':
