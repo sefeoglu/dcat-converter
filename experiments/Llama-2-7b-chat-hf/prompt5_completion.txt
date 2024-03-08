@@ -1,0 +1,68 @@
+I have tried to match the elements of the two ontologies using the following rules:
+
+1. Element name matching: If the element name in ontology 2 matches the element name in ontology 1, then the elements are considered to be matching. For example, the element "title" in ontology 1 matches the element "title" in ontology 2.
+2. Substitution group matching: If the element in ontology 2 has a substitution group that matches the element in ontology 1, then the elements are considered to be matching. For example, the element "creator" in ontology 1 matches the element "creator" in ontology 2 because they have the same substitution group.
+3. Element hierarchy matching: If the element in ontology 2 is a child of an element in ontology 1, then the elements are considered to be matching. For example, the element "description" in ontology 1 is a child of the element "dc:description", so the element "description" in ontology 2 is considered to be matching with the element "dc:description" in ontology 1.
+4. Element attribute matching: If the attributes of the element in ontology 2 match the attributes of the element in ontology 1, then the elements are considered to be matching. For example, the element "title" in ontology 1 has the attribute "lang", and the element "title" in ontology 2 also has the attribute "lang", so the elements are considered to be matching.
+
+Using these rules, I have matched the elements of the two ontologies as follows:
+
+Matched elements:
+
+* title
+* creator
+* subject
+* description
+* publisher
+* contributor
+* date
+* type
+* format
+* identifier
+* source
+* language
+* relation
+* coverage
+* rights
+* alternative
+* tableOfContents
+* abstract
+* created
+* valid
+* available
+* issued
+* modified
+* dateAccepted
+* dateCopyrighted
+* dateSubmitted
+* extent
+* medium
+* isVersionOf
+* hasVersion
+* isReplacedBy
+* replaces
+* isRequiredBy
+* requires
+* isPartOf
+* hasPart
+* isReferencedBy
+* references
+* isFormatOf
+* hasFormat
+* conformsTo
+* spatial
+* temporal
+* audience
+* accrualMethod
+* accrualPeriodicity
+* accrualPolicy
+* instructionalMethod
+* provenance
+* rightsHolder
+* mediator
+* educationLevel
+* accessRights
+* license
+* bibliographicCitation
+
+Note that some elements in ontology 2 do not have a match in ontology 1, and some elements in ontology 1 have multiple matches in ontology 2. This is because the elements in the two ontologies are not identical, and there are some differences in their structure and content.

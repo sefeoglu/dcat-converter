@@ -1,0 +1,277 @@
+[
+    {
+        "URI": "http://purl.org/dc/terms/title",
+        "Label": "Title",
+        "Definition": "A name given to the resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/creator",
+        "Label": "Creator",
+        "Definition": "An entity responsible for making the resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/subject",
+        "Label": "Subject",
+        "Definition": "A topic of the resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/description",
+        "Label": "Description",
+        "Definition": "An account of the resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/publisher",
+        "Label": "Publisher",
+        "Definition": "An entity responsible for making the resource available."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/contributor",
+        "Label": "Contributor",
+        "Definition": "An entity responsible for making contributions to the resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/date",
+        "Label": "Date",
+        "Definition": "A point or period of time associated with an event in the lifecycle of the resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/type",
+        "Label": "Type",
+        "Definition": "The nature or genre of the resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/format",
+        "Label": "Format",
+        "Definition": "The file format, physical medium, or dimensions of the resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/identifier",
+        "Label": "Identifier",
+        "Definition": "An unambiguous reference to the resource within a given context."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/source",
+        "Label": "Source",
+        "Definition": "A related resource from which the described resource is derived."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/language",
+        "Label": "Language",
+        "Definition": "A language of the resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/relation",
+        "Label": "Relation",
+        "Definition": "A related resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/coverage",
+        "Label": "Coverage",
+        "Definition": "The spatial or temporal topic of the resource, spatial applicability of the resource, or jurisdiction under which the resource is relevant."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/rights",
+        "Label": "Rights",
+        "Definition": "Information about rights held in and over the resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/alternative",
+        "Label": "Alternative Title",
+        "Definition": "An alternative name for the resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/tableOfContents",
+        "Label": "Table Of Contents",
+        "Definition": "A list of subunits of the resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/abstract",
+        "Label": "Abstract",
+        "Definition": "A summary of the resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/created",
+        "Label": "Date Created",
+        "Definition": "Date of creation of the resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/valid",
+        "Label": "Date Valid",
+        "Definition": "Date (often a range) of validity of a resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/available",
+        "Label": "Date Available",
+        "Definition": "Date that the resource became or will become available."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/issued",
+        "Label": "Date Issued",
+        "Definition": "Date of formal issuance of the resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/modified",
+        "Label": "Date Modified",
+        "Definition": "Date on which the resource was changed."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/dateAccepted",
+        "Label": "Date Accepted",
+        "Definition": "Date of acceptance of the resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/dateCopyrighted",
+        "Label": "Date Copyrighted",
+        "Definition": "Date of copyright of the resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/dateSubmitted",
+        "Label": "Date Submitted",
+        "Definition": "Date of submission of the resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/extent",
+        "Label": "Extent",
+        "Definition": "The size or duration of the resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/medium",
+        "Label": "Medium",
+        "Definition": "The material or physical carrier of the resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/isVersionOf",
+        "Label": "Is Version Of",
+        "Definition": "A related resource of which the described resource is a version, edition, or adaptation."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/hasVersion",
+        "Label": "Has Version",
+        "Definition": "A related resource that is a version, edition, or adaptation of the described resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/isReplacedBy",
+        "Label": "Is Replaced By",
+        "Definition": "A related resource that supplants, displaces, or supersedes the described resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/replaces",
+        "Label": "Replaces",
+        "Definition": "A related resource that is supplanted, displaced, or superseded by the described resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/isRequiredBy",
+        "Label": "Is Required By",
+        "Definition": "A related resource that requires the described resource to support its function, delivery, or coherence."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/requires",
+        "Label": "Requires",
+        "Definition": "A related resource that is required by the described resource to support its function, delivery, or coherence."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/isPartOf",
+        "Label": "Is Part Of",
+        "Definition": "A related resource in which the described resource is physically or logically included."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/hasPart",
+        "Label": "Has Part",
+        "Definition": "A related resource that is included either physically or logically in the described resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/isReferencedBy",
+        "Label": "Is Referenced By",
+        "Definition": "A related resource that references, cites, or otherwise points to the described resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/references",
+        "Label": "References",
+        "Definition": "A related resource that is referenced, cited, or otherwise pointed to by the described resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/isFormatOf",
+        "Label": "Is Format Of",
+        "Definition": "A pre-existing related resource that is substantially the same as the described resource, but in another format."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/hasFormat",
+        "Label": "Has Format",
+        "Definition": "A related resource that is substantially the same as the pre-existing described resource, but in another format."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/conformsTo",
+        "Label": "Conforms To",
+        "Definition": "An established standard to which the described resource conforms."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/spatial",
+        "Label": "Spatial Coverage",
+        "Definition": "Spatial characteristics of the resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/temporal",
+        "Label": "Temporal Coverage",
+        "Definition": "Temporal characteristics of the resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/audience",
+        "Label": "Audience",
+        "Definition": "A class of agents for whom the resource is intended or useful."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/accrualMethod",
+        "Label": "Accrual Method",
+        "Definition": "The method by which items are added to a collection."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/accrualPeriodicity",
+        "Label": "Accrual Periodicity",
+        "Definition": "The frequency with which items are added to a collection."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/accrualPolicy",
+        "Label": "Accrual Policy",
+        "Definition": "The policy governing the addition of items to a collection."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/instructionalMethod",
+        "Label": "Instructional Method",
+        "Definition": "A process, used to engender knowledge, attitudes and skills, that the described resource is designed to support."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/provenance",
+        "Label": "Provenance",
+        "Definition": "A statement of any changes in ownership and custody of the resource since its creation that are significant for its authenticity, integrity, and interpretation."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/rightsHolder",
+        "Label": "Rights Holder",
+        "Definition": "A person or organization owning or managing rights over the resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/mediator",
+        "Label": "Mediator",
+        "Definition": "An entity that mediates access to the resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/educationLevel",
+        "Label": "Audience Education Level",
+        "Definition": "A class of agents, defined in terms of progression through an educational or training context, for which the described resource is intended."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/accessRights",
+        "Label": "Access Rights",
+        "Definition": "Information about who access the resource or an indication of its security status."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/license",
+        "Label": "License",
+        "Definition": "A legal document giving official permission to do something with the resource."
+    },
+    {
+        "URI": "http://purl.org/dc/terms/bibliographicCitation",
+        "Label": "Bibliographic Citation",
+        "Definition": "A bibliographic reference for the resource."
+    }
+]

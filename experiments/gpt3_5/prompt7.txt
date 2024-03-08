@@ -1,0 +1,90 @@
+Ontology alignment is to find the correspondeces between ontology 1 and ontology2.
+
+Ontology1 has the following elements:
+ <xs:element name="title" substitutionGroup="any"/>
+  <xs:element name="creator" substitutionGroup="any"/>
+  <xs:element name="subject" substitutionGroup="any"/>
+  <xs:element name="description" substitutionGroup="any"/>
+  <xs:element name="publisher" substitutionGroup="any"/>
+  <xs:element name="contributor" substitutionGroup="any"/>
+  <xs:element name="date" substitutionGroup="any"/>
+  <xs:element name="type" substitutionGroup="any"/>
+  <xs:element name="format" substitutionGroup="any"/>
+  <xs:element name="identifier" substitutionGroup="any"/>
+  <xs:element name="source" substitutionGroup="any"/>
+  <xs:element name="language" substitutionGroup="any"/>
+  <xs:element name="relation" substitutionGroup="any"/>
+  <xs:element name="coverage" substitutionGroup="any"/>
+  <xs:element name="rights" substitutionGroup="any"/>
+  .
+
+  For an element in the first ontology, which element in ontology 2 is the best match?
+
+  Ontology 2 has the following elements:
+     <xs:element name="title" substitutionGroup="dc:title"/>
+   <xs:element name="creator" substitutionGroup="dc:creator"/>
+   <xs:element name="subject" substitutionGroup="dc:subject"/>
+   <xs:element name="description" substitutionGroup="dc:description"/>
+   <xs:element name="publisher" substitutionGroup="dc:publisher"/>
+   <xs:element name="contributor" substitutionGroup="dc:contributor"/>
+   <xs:element name="date" substitutionGroup="dc:date"/>
+   <xs:element name="type" substitutionGroup="dc:type"/>
+   <xs:element name="format" substitutionGroup="dc:format"/>
+   <xs:element name="identifier" substitutionGroup="dc:identifier"/>
+   <xs:element name="source" substitutionGroup="dc:source"/>
+   <xs:element name="language" substitutionGroup="dc:language"/>
+   <xs:element name="relation" substitutionGroup="dc:relation"/>
+   <xs:element name="coverage" substitutionGroup="dc:coverage"/>
+   <xs:element name="rights" substitutionGroup="dc:rights"/>
+
+   <xs:element name="alternative" substitutionGroup="title"/>
+
+   <xs:element name="tableOfContents" substitutionGroup="description"/>
+   <xs:element name="abstract" substitutionGroup="description"/>
+
+   <xs:element name="created" substitutionGroup="date"/>
+   <xs:element name="valid" substitutionGroup="date"/>
+   <xs:element name="available" substitutionGroup="date"/>
+   <xs:element name="issued" substitutionGroup="date"/>
+   <xs:element name="modified" substitutionGroup="date"/>
+   <xs:element name="dateAccepted" substitutionGroup="date"/>
+   <xs:element name="dateCopyrighted" substitutionGroup="date"/>
+   <xs:element name="dateSubmitted" substitutionGroup="date"/>
+
+   <xs:element name="extent" substitutionGroup="format"/>
+   <xs:element name="medium" substitutionGroup="format"/>
+
+   <xs:element name="isVersionOf" substitutionGroup="relation"/>
+   <xs:element name="hasVersion" substitutionGroup="relation"/>
+   <xs:element name="isReplacedBy" substitutionGroup="relation"/>
+   <xs:element name="replaces" substitutionGroup="relation"/>
+   <xs:element name="isRequiredBy" substitutionGroup="relation"/>
+   <xs:element name="requires" substitutionGroup="relation"/>
+   <xs:element name="isPartOf" substitutionGroup="relation"/>
+   <xs:element name="hasPart" substitutionGroup="relation"/>
+   <xs:element name="isReferencedBy" substitutionGroup="relation"/>
+   <xs:element name="references" substitutionGroup="relation"/>
+   <xs:element name="isFormatOf" substitutionGroup="relation"/>
+   <xs:element name="hasFormat" substitutionGroup="relation"/>
+   <xs:element name="conformsTo" substitutionGroup="relation"/>
+
+   <xs:element name="spatial" substitutionGroup="coverage"/>
+   <xs:element name="temporal" substitutionGroup="coverage"/>
+
+   <xs:element name="audience" substitutionGroup="dc:any"/>
+   <xs:element name="accrualMethod" substitutionGroup="dc:any"/>
+   <xs:element name="accrualPeriodicity" substitutionGroup="dc:any"/>
+   <xs:element name="accrualPolicy" substitutionGroup="dc:any"/>
+   <xs:element name="instructionalMethod" substitutionGroup="dc:any"/>
+   <xs:element name="provenance" substitutionGroup="dc:any"/>
+   <xs:element name="rightsHolder" substitutionGroup="dc:any"/>
+
+   <xs:element name="mediator" substitutionGroup="audience"/>
+   <xs:element name="educationLevel" substitutionGroup="audience"/>
+
+   <xs:element name="accessRights" substitutionGroup="rights"/>
+   <xs:element name="license" substitutionGroup="rights"/>
+
+   <xs:element name="bibliographicCitation" substitutionGroup="identifier"/>
+  .
+  

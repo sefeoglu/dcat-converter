@@ -1,0 +1,107 @@
+[
+    {
+        "URI": "http://purl.org/dc/elements/1.1/title",
+        "basic": "Title",
+        "context_1": "Title: A name given to the resource.",
+        "context_2": "Title: Property",
+        "context_3": "Title: A name given to the resource.Property"
+    },
+    {
+        "URI": "http://purl.org/dc/elements/1.1/creator",
+        "basic": "Creator",
+        "context_1": "Creator: An entity primarily responsible for making the resource.",
+        "context_2": "Creator: Examples of a Creator include a person, an organization, or a service. Typically, the name of a Creator should be used to indicate the entity.",
+        "context_3": "Creator: An entity primarily responsible for making the resource.Examples of a Creator include a person, an organization, or a service. Typically, the name of a Creator should be used to indicate the entity."
+    },
+    {
+        "URI": "http://purl.org/dc/elements/1.1/subject",
+        "basic": "Subject",
+        "context_1": "Subject: The topic of the resource.",
+        "context_2": "Subject: Typically, the subject will be represented using keywords, key phrases, or classification codes. Recommended best practice is to use a controlled vocabulary.",
+        "context_3": "Subject: The topic of the resource.Typically, the subject will be represented using keywords, key phrases, or classification codes. Recommended best practice is to use a controlled vocabulary."
+    },
+    {
+        "URI": "http://purl.org/dc/elements/1.1/description",
+        "basic": "Description",
+        "context_1": "Description: An account of the resource.",
+        "context_2": "Description: Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource.",
+        "context_3": "Description: An account of the resource.Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource."
+    },
+    {
+        "URI": "http://purl.org/dc/elements/1.1/publisher",
+        "basic": "Publisher",
+        "context_1": "Publisher: An entity responsible for making the resource available.",
+        "context_2": "Publisher: Examples of a Publisher include a person, an organization, or a service. Typically, the name of a Publisher should be used to indicate the entity.",
+        "context_3": "Publisher: An entity responsible for making the resource available.Examples of a Publisher include a person, an organization, or a service. Typically, the name of a Publisher should be used to indicate the entity."
+    },
+    {
+        "URI": "http://purl.org/dc/elements/1.1/contributor",
+        "basic": "Contributor",
+        "context_1": "Contributor: An entity responsible for making contributions to the resource.",
+        "context_2": "Contributor: The guidelines for using names of persons or organizations as creators also apply to contributors. Typically, the name of a Contributor should be used to indicate the entity.",
+        "context_3": "Contributor: An entity responsible for making contributions to the resource.The guidelines for using names of persons or organizations as creators also apply to contributors. Typically, the name of a Contributor should be used to indicate the entity."
+    },
+    {
+        "URI": "http://purl.org/dc/elements/1.1/date",
+        "basic": "Date",
+        "context_1": "Date: A point or period of time associated with an event in the lifecycle of the resource.",
+        "context_2": "Date: Date may be used to express temporal information at any level of granularity. Recommended practice is to express the date, date/time, or period of time according to ISO 8601-1 [ISO 8601-1] or a published profile of the ISO standard, such as the W3C Note on Date and Time Formats [W3CDTF] or the Extended Date/Time Format Specification [EDTF]. If the full date is unknown, month and year (YYYY-MM) or just year (YYYY) may be used. Date ranges may be specified using ISO 8601 period of time specification in which start and end dates are separated by a '/' (slash) character. Either the start or end date may be missing.",
+        "context_3": "Date: A point or period of time associated with an event in the lifecycle of the resource.Date may be used to express temporal information at any level of granularity. Recommended practice is to express the date, date/time, or period of time according to ISO 8601-1 [ISO 8601-1] or a published profile of the ISO standard, such as the W3C Note on Date and Time Formats [W3CDTF] or the Extended Date/Time Format Specification [EDTF]. If the full date is unknown, month and year (YYYY-MM) or just year (YYYY) may be used. Date ranges may be specified using ISO 8601 period of time specification in which start and end dates are separated by a '/' (slash) character. Either the start or end date may be missing."
+    },
+    {
+        "URI": "http://purl.org/dc/elements/1.1/type",
+        "basic": "Type",
+        "context_1": "Type: The nature or genre of the resource.",
+        "context_2": "Type: Recommended practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [DCMI-TYPE]. To describe the file format, physical medium, or dimensions of the resource, use the Format element.",
+        "context_3": "Type: The nature or genre of the resource.Recommended practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [DCMI-TYPE]. To describe the file format, physical medium, or dimensions of the resource, use the Format element."
+    },
+    {
+        "URI": "http://purl.org/dc/elements/1.1/format",
+        "basic": "Format",
+        "context_1": "Format: The file format, physical medium, or dimensions of the resource.",
+        "context_2": "Format: Recommended practice is to use a controlled vocabulary where available. For example, for file formats one could use the list of Internet Media Types [MIME].",
+        "context_3": "Format: The file format, physical medium, or dimensions of the resource.Recommended practice is to use a controlled vocabulary where available. For example, for file formats one could use the list of Internet Media Types [MIME]."
+    },
+    {
+        "URI": "http://purl.org/dc/elements/1.1/identifier",
+        "basic": "Identifier",
+        "context_1": "Identifier: An unambiguous reference to the resource within a given context.",
+        "context_2": "Identifier: Recommended practice is to identify the resource by means of a string conforming to an identification system.",
+        "context_3": "Identifier: An unambiguous reference to the resource within a given context.Recommended practice is to identify the resource by means of a string conforming to an identification system."
+    },
+    {
+        "URI": "http://purl.org/dc/elements/1.1/source",
+        "basic": "Source",
+        "context_1": "Source: A related resource from which the described resource is derived.",
+        "context_2": "Source: The described resource may be derived from the related resource in whole or in part. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system.",
+        "context_3": "Source: A related resource from which the described resource is derived.The described resource may be derived from the related resource in whole or in part. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system."
+    },
+    {
+        "URI": "http://purl.org/dc/elements/1.1/language",
+        "basic": "Language",
+        "context_1": "Language: A language of the resource.",
+        "context_2": "Language: Recommended practice is to use either a non-literal value representing a language from a controlled vocabulary such as ISO 639-2 or ISO 639-3, or a literal value consisting of an IETF Best Current Practice 47 [IETF-BCP47] language tag.",
+        "context_3": "Language: A language of the resource.Recommended practice is to use either a non-literal value representing a language from a controlled vocabulary such as ISO 639-2 or ISO 639-3, or a literal value consisting of an IETF Best Current Practice 47 [IETF-BCP47] language tag."
+    },
+    {
+        "URI": "http://purl.org/dc/elements/1.1/relation",
+        "basic": "Relation",
+        "context_1": "Relation: A related resource.",
+        "context_2": "Relation: Recommended practice is to identify the related resource by means of a URI. If this is not possible or feasible, a string conforming to a formal identification system may be provided.",
+        "context_3": "Relation: A related resource.Recommended practice is to identify the related resource by means of a URI. If this is not possible or feasible, a string conforming to a formal identification system may be provided."
+    },
+    {
+        "URI": "http://purl.org/dc/elements/1.1/coverage",
+        "basic": "Coverage",
+        "context_1": "Coverage: The spatial or temporal topic of the resource, spatial applicability of the resource, or jurisdiction under which the resource is relevant.",
+        "context_2": "Coverage: Spatial topic and spatial applicability may be a named place or a location specified by its geographic coordinates. Temporal topic may be a named period, date, or date range. A jurisdiction may be a named administrative entity or a geographic place to which the resource applies. Recommended practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names [TGN]. Where appropriate, named places or time periods may be used in preference to numeric identifiers such as sets of coordinates or date ranges.",
+        "context_3": "Coverage: The spatial or temporal topic of the resource, spatial applicability of the resource, or jurisdiction under which the resource is relevant.Spatial topic and spatial applicability may be a named place or a location specified by its geographic coordinates. Temporal topic may be a named period, date, or date range. A jurisdiction may be a named administrative entity or a geographic place to which the resource applies. Recommended practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names [TGN]. Where appropriate, named places or time periods may be used in preference to numeric identifiers such as sets of coordinates or date ranges."
+    },
+    {
+        "URI": "http://purl.org/dc/elements/1.1/rights",
+        "basic": "Rights",
+        "context_1": "Rights: Information about rights held in and over the resource.",
+        "context_2": "Rights: Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights.",
+        "context_3": "Rights: Information about rights held in and over the resource.Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights."
+    }
+]

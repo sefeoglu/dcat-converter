@@ -1,0 +1,225 @@
+{
+    "correspondences": [
+      {
+        "Ontology1Element": "title",
+        "Ontology2Element": "dc:title"
+      },
+      {
+        "Ontology1Element": "creator",
+        "Ontology2Element": "dc:creator"
+      },
+      {
+        "Ontology1Element": "subject",
+        "Ontology2Element": "dc:subject"
+      },
+      {
+        "Ontology1Element": "description",
+        "Ontology2Element": "dc:description"
+      },
+      {
+        "Ontology1Element": "publisher",
+        "Ontology2Element": "dc:publisher"
+      },
+      {
+        "Ontology1Element": "contributor",
+        "Ontology2Element": "dc:contributor"
+      },
+      {
+        "Ontology1Element": "date",
+        "Ontology2Element": "dc:date"
+      },
+      {
+        "Ontology1Element": "type",
+        "Ontology2Element": "dc:type"
+      },
+      {
+        "Ontology1Element": "format",
+        "Ontology2Element": "dc:format"
+      },
+      {
+        "Ontology1Element": "identifier",
+        "Ontology2Element": "dc:identifier"
+      },
+      {
+        "Ontology1Element": "source",
+        "Ontology2Element": "dc:source"
+      },
+      {
+        "Ontology1Element": "language",
+        "Ontology2Element": "dc:language"
+      },
+      {
+        "Ontology1Element": "relation",
+        "Ontology2Element": "dc:relation"
+      },
+      {
+        "Ontology1Element": "coverage",
+        "Ontology2Element": "dc:coverage"
+      },
+      {
+        "Ontology1Element": "rights",
+        "Ontology2Element": "dc:rights"
+      },
+      {
+        "Ontology1Element": "alternative",
+        "Ontology2Element": "title"
+      },
+      {
+        "Ontology1Element": "tableOfContents",
+        "Ontology2Element": "description"
+      },
+      {
+        "Ontology1Element": "abstract",
+        "Ontology2Element": "description"
+      },
+      {
+        "Ontology1Element": "created",
+        "Ontology2Element": "date"
+      },
+      {
+        "Ontology1Element": "valid",
+        "Ontology2Element": "date"
+      },
+      {
+        "Ontology1Element": "available",
+        "Ontology2Element": "date"
+      },
+      {
+        "Ontology1Element": "issued",
+        "Ontology2Element": "date"
+      },
+      {
+        "Ontology1Element": "modified",
+        "Ontology2Element": "date"
+      },
+      {
+        "Ontology1Element": "dateAccepted",
+        "Ontology2Element": "date"
+      },
+      {
+        "Ontology1Element": "dateCopyrighted",
+        "Ontology2Element": "date"
+      },
+      {
+        "Ontology1Element": "dateSubmitted",
+        "Ontology2Element": "date"
+      },
+      {
+        "Ontology1Element": "extent",
+        "Ontology2Element": "format"
+      },
+      {
+        "Ontology1Element": "medium",
+        "Ontology2Element": "format"
+      },
+      {
+        "Ontology1Element": "isVersionOf",
+        "Ontology2Element": "relation"
+      },
+      {
+        "Ontology1Element": "hasVersion",
+        "Ontology2Element": "relation"
+      },
+      {
+        "Ontology1Element": "isReplacedBy",
+        "Ontology2Element": "relation"
+      },
+      {
+        "Ontology1Element": "replaces",
+        "Ontology2Element": "relation"
+      },
+      {
+        "Ontology1Element": "isRequiredBy",
+        "Ontology2Element": "relation"
+      },
+      {
+        "Ontology1Element": "requires",
+        "Ontology2Element": "relation"
+      },
+      {
+        "Ontology1Element": "isPartOf",
+        "Ontology2Element": "relation"
+      },
+      {
+        "Ontology1Element": "hasPart",
+        "Ontology2Element": "relation"
+      },
+      {
+        "Ontology1Element": "isReferencedBy",
+        "Ontology2Element": "relation"
+      },
+      {
+        "Ontology1Element": "references",
+        "Ontology2Element": "relation"
+      },
+      {
+        "Ontology1Element": "isFormatOf",
+        "Ontology2Element": "relation"
+      },
+      {
+        "Ontology1Element": "hasFormat",
+        "Ontology2Element": "relation"
+      },
+      {
+        "Ontology1Element": "conformsTo",
+        "Ontology2Element": "relation"
+      },
+      {
+        "Ontology1Element": "spatial",
+        "Ontology2Element": "coverage"
+      },
+      {
+        "Ontology1Element": "temporal",
+        "Ontology2Element": "coverage"
+      },
+      {
+        "Ontology1Element": "audience",
+        "Ontology2Element": "dc:any"
+      },
+      {
+        "Ontology1Element": "accrualMethod",
+        "Ontology2Element": "dc:any"
+      },
+      {
+        "Ontology1Element": "accrualPeriodicity",
+        "Ontology2Element": "dc:any"
+      },
+      {
+        "Ontology1Element": "accrualPolicy",
+        "Ontology2Element": "dc:any"
+      },
+      {
+        "Ontology1Element": "instructionalMethod",
+        "Ontology2Element": "dc:any"
+      },
+      {
+        "Ontology1Element": "provenance",
+        "Ontology2Element": "dc:any"
+      },
+      {
+        "Ontology1Element": "rightsHolder",
+        "Ontology2Element": "dc:any"
+      },
+      {
+        "Ontology1Element": "mediator",
+        "Ontology2Element": "audience"
+      },
+      {
+        "Ontology1Element": "educationLevel",
+        "Ontology2Element": "audience"
+      },
+      {
+        "Ontology1Element": "accessRights",
+        "Ontology2Element": "rights"
+      },
+      {
+        "Ontology1Element": "license",
+        "Ontology2Element": "rights"
+      },
+      {
+        "Ontology1Element": "bibliographicCitation",
+        "Ontology2Element": "identifier"
+      }
+    ]
+  }
+  
