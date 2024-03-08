@@ -40,13 +40,17 @@ class converterService(object):
 
 if __name__ == '__main__':
     print("Start converting json to rdf")
-    config = configparser.ConfigParser()
-    config.read(PREFIX_PATH + 'config.ini')
-    # get the catalog information from config.ini
-    catalog_title = PREFIX_PATH + config['REPOSITORY']['repository_name']
-    catalog_uri = PREFIX_PATH + config['REPOSITORY']['repository_URI']
-    input_path = PREFIX_PATH + config['PATH']['input_path']
-    out_catalog_path = PREFIX_PATH + config['RDF']['data_output']
+    for config_name in os.listdir(PREFIX_PATH+"configs"):
+        if config_name.endswith(".ini"):
+            config = configparser.ConfigParser()
+            config.read(PREFIX_PATH + "configs/"+config_name)
+            print(config_name)
+            # # get the catalog information from config.ini
+            catalog_title = PREFIX_PATH + config['REPOSITORY']['repository_name']
+            catalog_uri = PREFIX_PATH + config['REPOSITORY']['repository_URI']
+            input_path = PREFIX_PATH + config['PATH']['input_path']
+            out_catalog_path = PREFIX_PATH + config['RDF']['data_output']
 
-    service = converterService(catalog_title, catalog_uri, input_path, out_catalog_path)
+            service = converterService(catalog_title, catalog_uri, input_path, out_catalog_path)
+            
     print("Finish converting json to rdf")

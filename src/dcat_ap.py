@@ -33,6 +33,7 @@ class dcat_ap(object):
             data (_type_): _description_
             catalog_uri (_type_): _description_
         """
+        # print(data)
         dataset_uri = BNode()
         self.graph.add((dataset_uri, self.RDF.type, self.DCAT.Dataset))
         self.graph.add((catalog_uri, self.DCAT.Dataset, dataset_uri))
@@ -218,6 +219,7 @@ class dcat_ap(object):
                 for key in dataset[str(i)].keys():
                     item = dataset[str(i)][key]
                     # print(key)
+                    # print(item)
                     if key == "paper":
                         break
                     if  key == "oai_dc:dc":
@@ -228,7 +230,6 @@ class dcat_ap(object):
                 # print(item)
                 if item is not None:
                     self.add_dataset(item, catalog_uri)
-
             self.save_graph(self.out_path +"_"+ str(file_index) + ".rdf")
                 
     def add_title(self, title, dataset_uri):
