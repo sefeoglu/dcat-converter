@@ -7,15 +7,22 @@ The project converts the oai_dc formatted meta data into dcat_ap format and save
 .
 ├── LICENSE
 ├── README.md
-├── configs --> all the config.ini files of the repositories.
 ├── config.ini
+├── configs --> all the config.ini files of the repositories.
+│   ├── config_fuberlin.ini
+│   ├── config_huberlin.ini
+│   └── config_tuberlin.ini
 ├── data
 │   └── sample.rdf
+├── dockerfile
 ├── requirements.txt
+├── schema
+├── schema_matching_experiments
 └── src
     ├── converter_service.py
     ├── data_crawler.py
     ├── dcat_ap.py
+    ├── schema_matcher
     └── utils.py
 ````
 ## Run
