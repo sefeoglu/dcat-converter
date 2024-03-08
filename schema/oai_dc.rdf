@@ -1,4 +1,9 @@
-<schema xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.openarchives.org/OAI/2.0/oai_dc/" elementFormDefault="qualified" attributeFormDefault="unqualified">
+<schema xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" 
+        xmlns:dc="http://purl.org/dc/elements/1.1/" 
+        xmlns="http://www.w3.org/2001/XMLSchema" 
+        targetNamespace="http://www.openarchives.org/OAI/2.0/oai_dc/" 
+        elementFormDefault="qualified" 
+        attributeFormDefault="unqualified">
 <annotation>
 <documentation> XML Schema 2002-03-18 by Pete Johnston. Adjusted for usage in the OAI-PMH. Schema imports the Dublin Core elements from the DCMI schema for unqualified Dublin Core. 2002-12-19 updated to use simpledc20021212.xsd (instead of simpledc20020312.xsd) </documentation>
 </annotation>
