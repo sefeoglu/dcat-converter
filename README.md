@@ -43,22 +43,7 @@ After finishing the steps, repeat them for other repository.
 
 ## 1. Change the config.ini
 * copy the config_reponame's content into ```config.ini``` for the repository
-
-## 2. Data Collection
-
-  
-* Run the scprit below:
-``` 
-python src/data_crawler.py
-```
-
-## 3. Converter
-* Run the script below:
-```
-python src/converter_service.py
-```
-
-## 4. Repository APIs
+## 2. Repository APIs
 * 1.) Refubium Repository
 
 ```
@@ -75,5 +60,20 @@ https://api-depositonce.tu-berlin.de/server/oai/request?verb=ListRecords&resumpt
 ```
 https://edoc.hu-berlin.de/oai/request/?verb=ListRecords&resumptionToken=oai_dc////
 ```
+
+## 3. Data Collection 
+
+  
+* Run the scprit below:
+``` 
+python src/data_crawler.py
+```
+
+## 4. Converter
+* Run the script below:
+```
+python src/converter_service.py
+```
+
 
 * Note:Poster paper from the project has been submitted and waiting for the review, so we will update the readme later. The project will be released, so the repository was updated.
