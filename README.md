@@ -52,13 +52,13 @@ After finishing the steps, repeat them for other repository.
 python src/data_crawler.py
 ```
 
-## 2. Converter:
+## 3. Converter
 * Run the script below:
 ```
 python src/converter_service.py
 ```
 
-## Repository APIs
+## 4. Repository APIs
 * 1.) Refubium Repository
 
 ```
