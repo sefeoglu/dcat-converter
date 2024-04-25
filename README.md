@@ -2,6 +2,10 @@
 The project converts the oai_dc formatted meta data into dcat_ap format and save them in rdf format.
 This converter has been integrated to harvest the data of Berlin University Alliance.
 The portal of this project is available since last November: [META4BUA](https://meta4bua.fokus.fraunhofer.de/datasets?locale=en)
+## Meta Data Portal of Berling Open Science Platform
+
+![META4BUA](https://github.com/sefeoglu/dcat-converter/blob/master/doc/bua.png)
+
 
 ## Project Folder Structure
 ````
