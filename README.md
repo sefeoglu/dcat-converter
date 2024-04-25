@@ -1,3 +1,5 @@
+The poster paper "Converter: Enhancing Interoperability in Research Data Management" of this repository has been accepted by ESWC 2024.
+
 # DCAT Converter
 The project converts the oai_dc formatted meta data into dcat_ap format and save them in rdf format.
 This converter has been integrated to harvest the data of Berlin University Alliance.
@@ -87,4 +89,3 @@ python src/converter_service.py
 ```
 
 
-* Note:Poster paper from the project has been submitted and waiting for the review, so we will update the readme later. The project will be released, so the repository was updated.
