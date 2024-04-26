@@ -87,5 +87,5 @@ python src/data_crawler.py
 ```
 python src/converter_service.py
 ```
-@author: Sefika Efeoglu
+@author: Sefika Efeoglu: sefika.efeoglu@fu-berlin.de
 
