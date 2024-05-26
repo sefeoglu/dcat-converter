@@ -81,8 +81,6 @@ class dcat_ap(object):
         # abstract
         if 'dcterms:abstract' in data.keys():
             self.add_description(data, dataset_uri)
-
-        
         # language
         if "dc:language" in data.keys():
             self.add_language(data, dataset_uri)
@@ -192,14 +190,14 @@ class dcat_ap(object):
         elif type(data['dc:subject']) is dict and "#text" in data['dc:subject'].keys():
             if data['dc:subject']['@xsi:type'] == 'xMetaDiss:noScheme':
                 if data['dc:subject']['#text'] != "{'@xsi:type': 'xMetaDiss:noScheme'}":
-                    subject = self.normalize_subject(data['dc:subject']['#text']
+                    subject = self.normalize_subject = data['dc:subject']['#text']
                     self.graph.add((dataset_uri, self.DCAT.keyword, Literal(subject)))
         else:
             if data['dc:subject'] != "{'@xsi:type': 'xMetaDiss:noScheme'}":
                 subject = self.normalize_subject(data['dc:subject'])
                 self.graph.add((dataset_uri, self.DCAT.keyword, Literal(subject)))
 
-    def add_description(self, description, dataset_uri):
+    def add_description(self, data, dataset_uri):
         """description to graph
         """
         if type(data["dcterms:abstract"]) is list:
@@ -221,7 +219,7 @@ class dcat_ap(object):
             description = data['dc:description']
             self.graph.add((dataset_uri, self.DCTERMS.description, Literal(description)))
 
-    def add_issued(self, date, dataset_uri):
+    def add_issued(self, data, dataset_uri):
         """add date to graph
         """
         if type(data['dc:date']) is list:
@@ -265,7 +263,7 @@ class dcat_ap(object):
             date = data["dcterms:dateSubmitted"]
             self.graph.add((dataset_uri, self.DCTERMS.modified, Literal(date)))
 
-    def add_type(self, _type_, dataset_uri):
+    def add_type(self, data, dataset_uri):
         """add type to graph"""
 
         if type(data['dc:type']) is list:
