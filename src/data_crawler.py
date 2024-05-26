@@ -58,7 +58,7 @@ def main(url, file_path,  offset_count, end):
                     paper = meta_item['metadata']['xMetaDiss:xMetaDiss'] 
                 elif "oai_dc:dc" in meta_item["metadata"].keys():
                     paper = meta_item['metadata']['oai_dc:dc'] 
-                data_dict[str(id)] = {"paper": paper}
+                data_dict[str(id)] = {"xMetaDiss:xMetaDiss": paper}
 
                 id += 1
 
