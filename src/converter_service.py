@@ -3,7 +3,7 @@ import os
 from utils import read_json
 from dcat_ap import dcat_ap
 import configparser
-
+from data_crawler import crawler
 PACKAGE_PARENT = '.'
 SCRIPT_DIR = os.path.dirname(os.path.realpath(os.path.join(os.getcwd(), os.path.expanduser(__file__))))
 sys.path.append(os.path.normpath(os.path.join(SCRIPT_DIR, PACKAGE_PARENT)))
@@ -39,10 +39,23 @@ class converterService(object):
 
 
 if __name__ == '__main__':
-    print("Start converting json to rdf")
+    #parameters
+
+
+    print("The data crawler is completed.")
+    
     for config_name in os.listdir(PREFIX_PATH+"configs"):
         if config_name.endswith(".ini"):
             config = configparser.ConfigParser()
+            url = config["CRAWLER"]['api_url']
+            file_path = PREFIX_PATH + config['PATH']['input_path']
+            offset_count = int(config["CRAWLER"]['offset_count'])
+            end_number = int(config["CRAWLER"]['end_number'])
+
+            print("The data crawler has been started !")
+            # send the parameters to the crawler
+            crawler(url, file_path, offset_count, end_number)
+            print("Start converting json to rdf")
             config.read(PREFIX_PATH + "configs/"+config_name)
             print(config_name)
             # # get the catalog information from config.ini

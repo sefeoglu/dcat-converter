@@ -20,7 +20,7 @@ def save_results(data, file_path):
     with open(file_path, "w", encoding='utf8') as outfile:
         json.dump(data, outfile, ensure_ascii=False)
 
-def main(url, file_path,  offset_count, end):
+def crawler(url, file_path,  offset_count, end):
     """ Collecting the data from the repositories and save the data into a json file
 
     Args:
@@ -64,21 +64,21 @@ def main(url, file_path,  offset_count, end):
 
     save_results(data_dict, file_path)
 
-if __name__ == "__main__":
-    #parsing
+# if __name__ == "__main__":
+#     #parsing
   
-    config = configparser.ConfigParser()
-    config.read(PREFIX_PATH + 'config.ini')
+#     config = configparser.ConfigParser()
+#     config.read(PREFIX_PATH + 'config.ini')
 
-    #parameters
-    url = config["CRAWLER"]['api_url']
-    file_path = PREFIX_PATH + config['PATH']['input_path']
-    offset_count = int(config["CRAWLER"]['offset_count'])
-    end_number = int(config["CRAWLER"]['end_number'])
+#     #parameters
+#     url = config["CRAWLER"]['api_url']
+#     file_path = PREFIX_PATH + config['PATH']['input_path']
+#     offset_count = int(config["CRAWLER"]['offset_count'])
+#     end_number = int(config["CRAWLER"]['end_number'])
 
-    print("The data crawler has been started !")
-    # send the parameters to the crawler
-    main(url, file_path, offset_count, end_number)
+#     print("The data crawler has been started !")
+#     # send the parameters to the crawler
+#     crawler(url, file_path, offset_count, end_number)
 
-    print("The data crawler is completed.")
+#     print("The data crawler is completed.")
 
