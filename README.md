@@ -57,7 +57,8 @@ After finishing the steps, repeat them for other repository.
 ## 1. Change the config.ini
 * copy the config_reponame's content into ```config.ini``` for the repository
 ## 2. Repository APIs
-### Note: The data can be harvested as partitions (100 records per request). We do not want to import all rdf files to the portal in each update.
+
+
 * 1.) Refubium Repository
 
 ```
@@ -74,6 +75,7 @@ https://api-depositonce.tu-berlin.de/server/oai/request?verb=ListRecords&metadat
 ```
 https://edoc.hu-berlin.de/oai/request/?verb=ListRecords&metadataPrefix=oai_dc
 ```
+* Note: The data can be harvested as partitions (100 records per request). We do not want to import all rdf files to the portal in each update.
 
 ## 3. Data Collection 
 
