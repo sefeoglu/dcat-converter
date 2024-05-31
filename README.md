@@ -77,15 +77,7 @@ https://edoc.hu-berlin.de/oai/request/?verb=ListRecords&metadataPrefix=oai_dc
 ```
 
  **Note: The data is harvested in partitions (100 records per request).  Entire data is not harvested and imported into the portal with each update.**
-## 3. Data Collection 
-
-  
-* Run the scprit below:
-``` 
-python src/data_crawler.py
-```
-
-## 4. Converter
+## 3. Data Collection and Converter
 * Run the script below:
 ```
 python src/converter_service.py
