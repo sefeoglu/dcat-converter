@@ -61,13 +61,13 @@ After finishing the steps, repeat them for other repository.
 * 1.) Refubium Repository
 
 ```
-https://refubium.fu-berlin.de/oai/dnb?verb=ListRecords&resumptionToken=xMetaDissPlus
+https://refubium.fu-berlin.de/oai/dnb?verb=ListRecords&metadataPrefix=xMetaDissPlus
 ```
 
 * 2.) Depositonce Repository
 
 ```
-https://api-depositonce.tu-berlin.de/server/oai/request?verb=ListRecords&resumptionToken=oai_dc
+https://api-depositonce.tu-berlin.de/server/oai/request?verb=ListRecords&metadataPrefix=oai_dc
 ```
 * 3.) Edoc Repository
 
