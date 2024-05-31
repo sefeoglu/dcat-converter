@@ -43,8 +43,7 @@ class dcat_ap(object):
            pass
         for name in matches.values():
             self.functions[name]="add_"+name
-        self.data = data
-        self.dataset_uri = dataset_uri
+
         # print(matches)
 
         for meta in data.keys():
@@ -329,7 +328,3 @@ class dcat_ap(object):
         """
         return str(subject).lower().replace("_", " ").replace("-", " ")
     
-# if __name__ == "__main__":
-#     dcat = dcat_ap()
-#     dcat.add_catalog()
-#     dcat.save_graph()
