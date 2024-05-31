@@ -36,7 +36,7 @@ def crawler(url, file_path,  offset_count, start_number,end):
     
     while exit == False:
         new_url = url+str(i)
-        print(new_url)
+        # print(new_url)
         html_text = requests.get(new_url).text
         record.append({"start":i, "end":i+offset_count, "meta":html_text})
         i = i + offset_count
@@ -49,7 +49,7 @@ def crawler(url, file_path,  offset_count, start_number,end):
     for publication in record:
 
         meta_data = xmltodict.parse(publication["meta"])
-        print(meta_data)
+        # print(meta_data)
         for meta_item in meta_data['OAI-PMH']['ListRecords']['record']:
             meta_keys = meta_item.keys()
 

@@ -2,7 +2,7 @@ from rdflib import Graph, URIRef, BNode, Literal, Namespace
 
 xMetaDiss = "xMetaDiss:xMetaDiss"
 OAI_DC = "oai_dc:dc"
-
+from matches import get_matches
 class dcat_ap(object):
 
     def __init__(self, outpath):
@@ -27,68 +27,39 @@ class dcat_ap(object):
         self.graph.bind('vcard', self.VCARD)
         self.graph.bind('locn', self.LOCN)
         self.out_path = outpath
+        
 
-    def add_dataset(self, data, catalog_uri):
-        """ add dataset to graph
-
-        Args:
-            data (_type_): _description_
-            catalog_uri (_type_): _description_
-        """
+    def add_dataset(self, data, catalog_uri, llm_matches, elements_path, terms_path):
+        """ add dataset to graph"""
         # print(data)
         dataset_uri = BNode()
         self.graph.add((dataset_uri, self.RDF.type, self.DCAT.Dataset))
         self.graph.add((catalog_uri, self.DCAT.Dataset, dataset_uri))
-        # title
-        matches = []
-        if "dc:title" in data.keys():
-            self.add_title(data, dataset_uri)
+        #get matches from experiments
+        matches = get_matches(data, llm_matches, elements_path, terms_path)
+        self.functions = {}
 
-        #creator
-        if "dc:creator" in data.keys():
+        def func_not_found(data, dataset_uri):
+           pass
+        for name in matches.values():
+            self.functions[name]="add_"+name
+        self.data = data
+        self.dataset_uri = dataset_uri
+        # print(matches)
 
-            self.add_creator(data, dataset_uri)
-        
-        # subject
-        if "dc:subject" in data.keys():
+        for meta in data.keys():
+            if not meta.startswith("@"):
+                if meta in matches.keys():
+                    function_name = matches[meta] 
+                    # print(function_name)
+                    func = self.functions[function_name]
+                    func = getattr(self, func, func_not_found) 
+                    # print(func)
+                    func(data, dataset_uri)
+     
+    
 
-            self.add_subject(data, dataset_uri)
-
-        # description
-        if "dc:description" in data.keys():
-                self.add_description(data, dataset_uri)
-        # date
-        if "dc:date" in data.keys():
-            self.add_issued(data, dataset_uri)
-        # type
-        if "dc:type" in data.keys():
-            self.add_type(data, dataset_uri)
-        # format
-        if "dc:format" in data.keys():
-            self.add_format(data, dataset_uri)
-        # rights
-        if "dc:rights" in data.keys():
-            self.add_rights(data, dataset_uri)
-        # created
-        if "dcterms:created" in data.keys():
-            self.add_issued(data, dataset_uri)
-        # dateSubmitted
-        if "dcterms:dateSubmitted" in data.keys():
-            self.add_modified(data, dataset_uri)
-        # identifier
-        if "ddb:identifier" in data.keys():
-            self.add_identifier(data, dataset_uri)
-        # abstract
-        if 'dcterms:abstract' in data.keys():
-            self.add_description(data, dataset_uri)
-        # language
-        if "dc:language" in data.keys():
-            self.add_language(data, dataset_uri)
-        # identifier
-        if "dc:identifier" in data.keys():
-            self.add_identifier(data, dataset_uri)
-
-    def add_catalog(self, dataset, catalog_uri_text, catalog_title):
+    def add_catalog(self, dataset, catalog_uri_text, catalog_title, llm_matches, elements_path, terms_path):
         """ add catalog to graph"""
 
         catalog_uri = URIRef(catalog_uri_text)
@@ -115,27 +86,29 @@ class dcat_ap(object):
                 item = item[key]
                 
             if item is not None:
-                self.add_dataset(item, catalog_uri)
+                self.add_dataset(item, catalog_uri, llm_matches, elements_path, terms_path)
+            
 
         self.save_graph(self.out_path  + ".rdf")
 
-                
+              
     def add_title(self, data, dataset_uri):
         """ add title to dataset
         """
-
+        # print(data)
         if type(data['dc:title']) is list:
+            
             for title in data['dc:title']:
                 if type(title) is dict:
                     title = title['#text']
-                    self.graph.add((dataset_uri, self.DCTERMS.title, Literal(title)))
+                    self.graph.add(( dataset_uri, self.DCTERMS.title, Literal(title)))
                 else:
                     self.graph.add((dataset_uri, self.DCTERMS.title, Literal(title)))
         elif type(data['dc:title']) is dict:
             title = data['dc:title']['#text']
             self.graph.add((dataset_uri, self.DCTERMS.title, Literal(title)))
         else:
-            title =data['dc:title']
+            title = data['dc:title']
             self.graph.add((dataset_uri, self.DCTERMS.title, Literal(title)))
 
     def add_person(self, person_uri, creator, dataset_uri):
@@ -194,8 +167,8 @@ class dcat_ap(object):
                 subject = self.normalize_subject(data['dc:subject'])
                 self.graph.add((dataset_uri, self.DCAT.keyword, Literal(subject)))
 
-    def add_description(self, data, dataset_uri):
-        """description to graph
+    def add_abstract(self, data, dataset_uri):
+        """abstract to graph
         """
         if "dcterms:abstract" in data.keys():
             if type(data["dcterms:abstract"]) is list:
@@ -206,7 +179,8 @@ class dcat_ap(object):
             elif type(data["dcterms:abstract"]) is dict and "#text" in data["dcterms:abstract"].keys():
                 description = data["dcterms:abstract"]["#text"]
                 self.graph.add((dataset_uri, self.DCTERMS.description, Literal(description)))
-        
+    
+    def add_description(self, data, dataset_uri): 
         if 'dc:description' in data.keys():  
             if type(data['dc:description']) is list:
                 for description in data['dc:description']:
