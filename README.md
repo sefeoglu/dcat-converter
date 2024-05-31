@@ -75,8 +75,8 @@ https://api-depositonce.tu-berlin.de/server/oai/request?verb=ListRecords&metadat
 ```
 https://edoc.hu-berlin.de/oai/request/?verb=ListRecords&metadataPrefix=oai_dc
 ```
-* <b> Note: The data is harvested in partitions (100 records per request). We do not want to import all RDF files into the portal with each update. We only import the new data into portal. 
 
+ **Note: The data is harvested in partitions (100 records per request).  Entire data is not harvested and imported into the portal with each update.**
 ## 3. Data Collection 
 
   
