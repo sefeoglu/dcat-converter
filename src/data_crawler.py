@@ -20,35 +20,36 @@ def save_results(data, file_path):
     with open(file_path, "w", encoding='utf8') as outfile:
         json.dump(data, outfile, ensure_ascii=False)
 
-def crawler(url, file_path,  offset_count, end):
+def crawler(url, file_path,  offset_count, start_number,end):
     """ Collecting the data from the repositories and save the data into a json file
 
     Args:
         url (str): repository url
         offset_count (int): the number of records in each html page
+        start_number (int): starting number of a record.
         end (int): total number of records in the repository
     """
-    i = 0
+    
+    i = start_number - (start_number%offset_count)
     exit = False
     record = []
-
+    
     while exit == False:
         new_url = url+str(i)
+        print(new_url)
         html_text = requests.get(new_url).text
         record.append({"start":i, "end":i+offset_count, "meta":html_text})
         i = i + offset_count
         if i > end:
             break
         
-
     data_dict = dict()
 
     id = 0
-
     for publication in record:
 
         meta_data = xmltodict.parse(publication["meta"])
-
+        print(meta_data)
         for meta_item in meta_data['OAI-PMH']['ListRecords']['record']:
             meta_keys = meta_item.keys()
 
@@ -73,12 +74,13 @@ def crawler(url, file_path,  offset_count, end):
 #     #parameters
 #     url = config["CRAWLER"]['api_url']
 #     file_path = PREFIX_PATH + config['PATH']['input_path']
+#     start_number = int(config["CRAWLER"]["start_number"])
 #     offset_count = int(config["CRAWLER"]['offset_count'])
 #     end_number = int(config["CRAWLER"]['end_number'])
 
 #     print("The data crawler has been started !")
 #     # send the parameters to the crawler
-#     crawler(url, file_path, offset_count, end_number)
+#     crawler(url, file_path, offset_count, start_number, end_number)
 
 #     print("The data crawler is completed.")
 
