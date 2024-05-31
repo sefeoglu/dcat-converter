@@ -68,7 +68,7 @@ class dcat_ap(object):
             self.add_format(data, dataset_uri)
         # rights
         if "dc:rights" in data.keys():
-            self.add_rights(data['dc:rights'], dataset_uri)
+            self.add_rights(data, dataset_uri)
         # created
         if "dcterms:created" in data.keys():
             self.add_issued(data, dataset_uri)
@@ -97,30 +97,27 @@ class dcat_ap(object):
         self.graph.add((catalog_uri, self.DCTERMS.title, Literal(title)))
         len_ = len(dataset)
         # create RDF for
-        count_partion = len_ // 1000
 
-        for file_index in range(0, count_partion):
-        
-            for i in range(file_index*1000, file_index*1000+1000):
+        for i in range(0,len_):
 
-                item = None
-                key = None
+            item = None
+            key = None
 
-                for key in dataset[str(i)].keys():
-                    item = dataset[str(i)][key]
-                    if key == xMetaDiss:
-                        break
-                    if  key == OAI_DC:
-                        item = item[key]
-                        break
-
-                if key == OAI_DC:
+            for key in dataset[str(i)].keys():
+                item = dataset[str(i)][key]
+                if key == xMetaDiss:
+                    break
+                if  key == OAI_DC:
                     item = item[key]
-                
-                if item is not None:
-                    self.add_dataset(item, catalog_uri)
+                    break
 
-            self.save_graph(self.out_path +"_"+ str(file_index) + ".rdf")
+            if key == OAI_DC:
+                item = item[key]
+                
+            if item is not None:
+                self.add_dataset(item, catalog_uri)
+
+        self.save_graph(self.out_path  + ".rdf")
 
                 
     def add_title(self, data, dataset_uri):
@@ -200,51 +197,55 @@ class dcat_ap(object):
     def add_description(self, data, dataset_uri):
         """description to graph
         """
-        if type(data["dcterms:abstract"]) is list:
-            for abstract in data["dcterms:abstract"]:
-                if "#text" in abstract.keys():
-                    description = abstract['#text']
-                    self.graph.add((dataset_uri, self.DCTERMS.description, Literal(description)))
-        elif type(data["dcterms:abstract"]) is dict and "#text" in data["dcterms:abstract"].keys():
-            description = data["dcterms:abstract"]["#text"]
-            self.graph.add((dataset_uri, self.DCTERMS.description, Literal(description)))
-        
-        if type(data['dc:description']) is list:
-            for description in data['dc:description']:
+        if "dcterms:abstract" in data.keys():
+            if type(data["dcterms:abstract"]) is list:
+                for abstract in data["dcterms:abstract"]:
+                    if "#text" in abstract.keys():
+                        description = abstract['#text']
+                        self.graph.add((dataset_uri, self.DCTERMS.description, Literal(description)))
+            elif type(data["dcterms:abstract"]) is dict and "#text" in data["dcterms:abstract"].keys():
+                description = data["dcterms:abstract"]["#text"]
                 self.graph.add((dataset_uri, self.DCTERMS.description, Literal(description)))
-        elif type(data['dc:description']) is dict:
-            description = data['dc:description']['#text']
-            self.graph.add((dataset_uri, self.DCTERMS.description, Literal(description)))
-        else:
-            description = data['dc:description']
-            self.graph.add((dataset_uri, self.DCTERMS.description, Literal(description)))
+        
+        if 'dc:description' in data.keys():  
+            if type(data['dc:description']) is list:
+                for description in data['dc:description']:
+                    self.graph.add((dataset_uri, self.DCTERMS.description, Literal(description)))
+            elif type(data['dc:description']) is dict:
+                description = data['dc:description']['#text']
+                self.graph.add((dataset_uri, self.DCTERMS.description, Literal(description)))
+            else:
+                description = data['dc:description']
+                self.graph.add((dataset_uri, self.DCTERMS.description, Literal(description)))
 
     def add_issued(self, data, dataset_uri):
         """add date to graph
         """
-        if type(data['dc:date']) is list:
-            self.graph.add((dataset_uri, self.DCTERMS.issued, Literal(data['dc:date'][0])))
-            self.add_modified(data['dc:date'][1], dataset_uri)
+        if 'dc:date' in data.keys():
+            if type(data['dc:date']) is list:
+                self.graph.add((dataset_uri, self.DCTERMS.issued, Literal(data['dc:date'][0])))
+                self.add_modified(data['dc:date'][1], dataset_uri)
 
-        elif type(data['dc:date']) is dict:
-            self.add_issued(data['dc:date']['#text'], dataset_uri)
-            self.graph.add((dataset_uri, self.DCTERMS.issued, Literal(data['dc:date']['#text']))))
-        else:
-            self.graph.add((dataset_uri, self.DCTERMS.issued, Literal(data['dc:date'])))
+            elif type(data['dc:date']) is dict:
+                self.add_issued(data['dc:date']['#text'], dataset_uri)
+                self.graph.add((dataset_uri, self.DCTERMS.issued, Literal(data['dc:date']['#text'])))
+            else:
+                self.graph.add((dataset_uri, self.DCTERMS.issued, Literal(data['dc:date'])))
 
-        if type(data['dcterms:created']) is list:
-            for created in data['dcterms:created']:
-                if type(created) is dict:
-                    date = created['#text']
-                    self.graph.add((dataset_uri, self.DCTERMS.issued, Literal(date)))
-                else:
-                    self.graph.add((dataset_uri, self.DCTERMS.issued, Literal(date)))
-        elif type(data['dcterms:created']) is dict:
-            date = data['dcterms:created']['#text']
-            self.graph.add((dataset_uri, self.DCTERMS.issued, Literal(date)))
-        else:
-            date = data['dcterms:created']
-            self.graph.add((dataset_uri, self.DCTERMS.issued, Literal(date)))
+        if 'dcterms:created' in data.keys():
+            if type(data['dcterms:created']) is list:
+                for created in data['dcterms:created']:
+                    if type(created) is dict:
+                        date = created['#text']
+                        self.graph.add((dataset_uri, self.DCTERMS.issued, Literal(date)))
+                    else:
+                        self.graph.add((dataset_uri, self.DCTERMS.issued, Literal(date)))
+            elif type(data['dcterms:created']) is dict:
+                date = data['dcterms:created']['#text']
+                self.graph.add((dataset_uri, self.DCTERMS.issued, Literal(date)))
+            else:
+                date = data['dcterms:created']
+                self.graph.add((dataset_uri, self.DCTERMS.issued, Literal(date)))
     
     def add_modified(self, data, dataset_uri):
         """add date to graph
@@ -267,7 +268,7 @@ class dcat_ap(object):
         """add type to graph"""
 
         if type(data['dc:type']) is list:
-            for type_ in data['dc:type']:
+            for _type_ in data['dc:type']:
                 self.graph.add((dataset_uri, self.DCTERMS.type, Literal(_type_)))
         elif type(data['dc:type']) is dict:
             _type_ = data['dc:type']['#text']
@@ -314,31 +315,32 @@ class dcat_ap(object):
 
     def add_identifier(self, data, dataset_uri):
         """add identifier to graph"""
-        if type(data['dc:identifier']) is list:
-            for identifier in data['dc:identifier']:
+        if 'dc:identifier' in data.keys():
+            if type(data['dc:identifier']) is list:
+                for identifier in data['dc:identifier']:
+                    self.graph.add((dataset_uri, self.DCTERMS.identifier, Literal(identifier)))
+            elif type(data['dc:identifier']) is dict:
+                identifier = data['dc:identifier']['#text']
                 self.graph.add((dataset_uri, self.DCTERMS.identifier, Literal(identifier)))
-        elif type(data['dc:identifier']) is dict:
-            identifier = data['dc:identifier']['#text']
-            self.graph.add((dataset_uri, self.DCTERMS.identifier, Literal(identifier)))
-        else:
-            identifier = data['dc:identifier']
-            self.graph.add((dataset_uri, self.DCTERMS.identifier, Literal(identifier)))
+            else:
+                identifier = data['dc:identifier']
+                self.graph.add((dataset_uri, self.DCTERMS.identifier, Literal(identifier)))
+        if 'ddb:identifier' in data.keys():
+            if type(data['ddb:identifier']) is list:
+            
+                for identifier in data['ddb:identifier']:
+                    if type(identifier) is dict and "#text" in identifier.keys():
+                        identifier = identifier['#text']
+                        self.graph.add((dataset_uri, self.DCTERMS.identifier, Literal(identifier)))
+                    else:
+                        self.graph.add((dataset_uri, self.DCTERMS.identifier, Literal(identifier)))
 
-        if type(data['ddb:identifier']) is list:
-        
-            for identifier in data['ddb:identifier']:
-                if type(identifier) is dict and "#text" in identifier.keys():
-                    identifier = identifier['#text']
-                    self.graph.add((dataset_uri, self.DCTERMS.identifier, Literal(identifier)))
-                else:
-                    self.graph.add((dataset_uri, self.DCTERMS.identifier, Literal(identifier)))
-
-        elif type(data['ddb:identifier']) is dict and '#text' in data['ddb:identifier']:
-            identifier = data['ddb:identifier']['#text']
-            self.graph.add((dataset_uri, self.DCTERMS.identifier, Literal(identifier)))
-        else:
-            identifier = data['ddb:identifier']
-            self.graph.add((dataset_uri, self.DCTERMS.identifier, Literal(identifier)))
+            elif type(data['ddb:identifier']) is dict and '#text' in data['ddb:identifier']:
+                identifier = data['ddb:identifier']['#text']
+                self.graph.add((dataset_uri, self.DCTERMS.identifier, Literal(identifier)))
+            else:
+                identifier = data['ddb:identifier']
+                self.graph.add((dataset_uri, self.DCTERMS.identifier, Literal(identifier)))
 
     def save_graph(self, filepath):
         """save graph to file"""
