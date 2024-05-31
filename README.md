@@ -57,21 +57,22 @@ After finishing the steps, repeat them for other repository.
 ## 1. Change the config.ini
 * copy the config_reponame's content into ```config.ini``` for the repository
 ## 2. Repository APIs
+### Note: The data can be harvested as partitions (100 records per request.)
 * 1.) Refubium Repository
 
 ```
-https://refubium.fu-berlin.de/oai/dnb?verb=ListRecords&resumptionToken=xMetaDissPlus////
+[https://refubium.fu-berlin.de/oai/dnb?verb=ListRecords&resumptionToken=xMetaDissPlus](https://refubium.fu-berlin.de/oai/dnb?verb=ListRecords&metadataPrefix=xMetaDissPlus)
 ```
 
 * 2.) Depositonce Repository
 
 ```
-https://api-depositonce.tu-berlin.de/server/oai/request?verb=ListRecords&resumptionToken=oai_dc////
+[https://api-depositonce.tu-berlin.de/server/oai/request?verb=ListRecords&resumptionToken=oai_dc](https://api-depositonce.tu-berlin.de/server/oai/request?verb=ListRecords&metadataPrefix=oai_dc)
 ```
 * 3.) Edoc Repository
 
 ```
-https://edoc.hu-berlin.de/oai/request/?verb=ListRecords&resumptionToken=oai_dc////
+[https://edoc.hu-berlin.de/oai/request/?verb=ListRecords&resumptionToken=oai_dc](https://edoc.hu-berlin.de/oai/request/?verb=ListRecords&metadataPrefix=oai_dc)
 ```
 
 ## 3. Data Collection 
