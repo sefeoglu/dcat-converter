@@ -3,9 +3,6 @@ import json
 DC_TERMS = "http://purl.org/dc/terms/"
 DC_ELEMENTS = "http://purl.org/dc/elements/1.1/"
 
-def sentence_sim(elements_path, terms_path, keys):
-    pass
-
 def llm_matches(keys, llm_matches_path, correspondences):
 
     with open(llm_matches_path, "r") as fout:
