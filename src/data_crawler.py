@@ -29,7 +29,7 @@ def crawler(url, file_path,  offset_count, start_number,end):
         start_number (int): starting number of a record.
         end (int): total number of records in the repository
     """
-    
+    # add start_number and offset_count
     i = start_number - (start_number%offset_count)
     exit = False
     record = []
