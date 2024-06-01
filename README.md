@@ -14,24 +14,28 @@ The portal of this project is available since last November: [META4BUA](https://
 ├── LICENSE
 ├── README.md
 ├── config.ini
-├── configs --> all the config.ini files of the repositories.
+├── configs                                   ---> all the config.ini files of the repositories.
 │   ├── config_fuberlin.ini
 │   ├── config_huberlin.ini
 │   └── config_tuberlin.ini
-├── data
-│   └── sample.rdf
+├── data                                      ---> RDFs will be in this folder.
+│   ├── fu_berlin.rdf
+│   ├── hu_berlin.rdf
+│   ├── sample.rdf
+│   └── tu_berlin.rdf
 ├── dockerfile
-├── requirements.txt
-├── schema
-├── schema_matching_experiments
+├── requirements.txt                           ---> Libraries
+├── schema                                     ---> dcat elements, terms, and dcat_ap, oai_dc
+├── schema_matching_experiments                ---> Prompting and similarity calculation to find correspondences between dcat elements and terms according to [1]
 └── src
-    ├── converter_service.py
+    ├── converter_service.py                   ---> The converter will run from this script.
     ├── data_crawler.py
     ├── dcat_ap.py
+    ├── matches.py
     ├── schema_matcher
     └── utils.py
 ````
-## Run
+## How to run on a conda environment
 * Create a conda environment
 
 ```
@@ -46,17 +50,12 @@ $ conda activate dcat_env
 * Install Requirements
 
 ```
-pip install -r requirements.txt
+$ pip install -r requirements.txt
 ```
 
-*  ```config_reponame.ini``` has the specific data crawling parameters.
-First copy the config file of the repository into ```config.ini``` for a repository that you would like to work.
-Then, run the steps below for only one repository.
-After finishing the steps, repeat them for other repository.
+*  ```config_reponame.ini``` under configs folder has the specific data crawling parameters.
 
-## 1. Change the config.ini
-* copy the config_reponame's content into ```config.ini``` for the repository
-## 2. Repository APIs
+## 1. Repository APIs
 
 
 * 1.) Refubium Repository
@@ -77,10 +76,35 @@ https://edoc.hu-berlin.de/oai/request/?verb=ListRecords&metadataPrefix=oai_dc
 ```
 
  **Note: The data is harvested in partitions (100 records per request).  Entire data is not harvested and imported into the portal with each update.**
-## 3. Data Collection and Converter
+ 
+## 2. Data Collection and Converter
 * Run the script below:
 ```
-python src/converter_service.py
+$ python src/converter_service.py
 ```
-@author: Sefika Efeoglu: sefika.efeoglu@fu-berlin.de
+
+------------------------------------------------------------------
+### References
+[1] Conversational Ontology Alignment with ChatGPT.
+````bash
+@misc{norouzi2023conversational,
+      title={Conversational Ontology Alignment with ChatGPT}, 
+      author={Sanaz Saki Norouzi and Mohammad Saeid Mahdavinejad and Pascal Hitzler},
+      year={2023},
+      eprint={2308.09217},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+````
+### Citation
+```bash
+@misc{efeoglu2024converter,
+      title={Converter: Enhancing Interoperability in Research Data Management}, 
+      author={Sefika Efeoglu and Zongxiong Chen and Sonja Schimmler and Bianca Wentzel},
+      year={2024},
+      eprint={2404.13406},
+      archivePrefix={arXiv},
+      primaryClass={cs.DL}
+}
+```
 
