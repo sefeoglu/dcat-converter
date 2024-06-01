@@ -82,7 +82,7 @@ https://edoc.hu-berlin.de/oai/request/?verb=ListRecords&metadataPrefix=oai_dc
 ## 2. Data Collection and Converter
 * Run the script below:
 ```
-python src/converter_service.py
+$ python src/converter_service.py
 ```
 @author: Sefika Efeoglu: sefika.efeoglu@fu-berlin.de
 
