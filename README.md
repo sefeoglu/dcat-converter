@@ -58,9 +58,7 @@ First copy the config file of the repository into ```config.ini``` for a reposit
 Then, run the steps below for only one repository.
 After finishing the steps, repeat them for other repository.
 
-## 1. Change the config.ini
-* copy the config_reponame's content into ```config.ini``` for the repository
-## 2. Repository APIs
+## 1. Repository APIs
 
 
 * 1.) Refubium Repository
@@ -81,7 +79,7 @@ https://edoc.hu-berlin.de/oai/request/?verb=ListRecords&metadataPrefix=oai_dc
 ```
 
  **Note: The data is harvested in partitions (100 records per request).  Entire data is not harvested and imported into the portal with each update.**
-## 3. Data Collection and Converter
+## 2. Data Collection and Converter
 * Run the script below:
 ```
 python src/converter_service.py
