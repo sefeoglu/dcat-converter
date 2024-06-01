@@ -35,7 +35,7 @@ The portal of this project is available since last November: [META4BUA](https://
     ├── schema_matcher
     └── utils.py
 ````
-## Run
+## How to run on a conda environment
 * Create a conda environment
 
 ```
