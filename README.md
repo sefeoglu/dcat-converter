@@ -19,7 +19,10 @@ The portal of this project is available since last November: [META4BUA](https://
 │   ├── config_huberlin.ini
 │   └── config_tuberlin.ini
 ├── data
-│   └── sample.rdf
+│   ├── fu_berlin.rdf
+│   ├── hu_berlin.rdf
+│   ├── sample.rdf
+│   └── tu_berlin.rdf
 ├── dockerfile
 ├── requirements.txt
 ├── schema
@@ -28,6 +31,7 @@ The portal of this project is available since last November: [META4BUA](https://
     ├── converter_service.py
     ├── data_crawler.py
     ├── dcat_ap.py
+    ├── matches.py
     ├── schema_matcher
     └── utils.py
 ````
