@@ -50,7 +50,7 @@ $ conda activate dcat_env
 * Install Requirements
 
 ```
-pip install -r requirements.txt
+$ pip install -r requirements.txt
 ```
 
 *  ```config_reponame.ini``` has the specific data crawling parameters.
