@@ -89,14 +89,15 @@ $ python src/converter_service.py
   ```bash
   https://github.com/sefeoglu/bop-docker-compose
   ```
-* BOP UI
+* BOP UI which based on piveau UI .
   ```bash
   https://github.com/sefeoglu/bua-bop-ui
   ```
-* BOP RDF Importer:
+* BOP RDF Importer which was modified from piveau rdf importer
   ```bash
   https://github.com/sefeoglu/bop-consus-importing-rdf
   ```
+Note: UI and RDF importer's images below are registered on fokus servers, so please register their images on your own server.
 
 
 ------------------------------------------------------------------
