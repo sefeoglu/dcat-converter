@@ -89,11 +89,11 @@ $ python src/converter_service.py
   ```bash
   https://github.com/sefeoglu/bop-docker-compose
   ```
-* BOP UI which based on piveau UI .
+* BOP UI, which is based on piveau UI .
   ```bash
   https://github.com/sefeoglu/bua-bop-ui
   ```
-* BOP RDF Importer which was modified from piveau rdf importer
+* BOP RDF Importer, which was modified from piveau rdf importer
   ```bash
   https://github.com/sefeoglu/bop-consus-importing-rdf
   ```
