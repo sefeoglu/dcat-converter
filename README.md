@@ -82,6 +82,22 @@ https://edoc.hu-berlin.de/oai/request/?verb=ListRecords&metadataPrefix=oai_dc
 ```
 $ python src/converter_service.py
 ```
+## 3. Pipeline
+![Pipeline](https://github.com/sefeoglu/dcat-converter/blob/master/doc/bua_converter.png)
+
+* BOP Docker Compose
+  ```bash
+  https://github.com/sefeoglu/bop-docker-compose
+  ```
+* BOP UI
+  ```bash
+  https://github.com/sefeoglu/bua-bop-ui
+  ```
+* BOP RDF Importer:
+  ```bash
+  https://github.com/sefeoglu/bop-consus-importing-rdf
+  ```
+
 
 ------------------------------------------------------------------
 ### References
