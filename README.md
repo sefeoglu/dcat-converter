@@ -13,7 +13,6 @@ The portal of this project is available since last November: [META4BUA](https://
 .
 ├── LICENSE
 ├── README.md
-├── config.ini
 ├── configs                                   ---> all the config.ini files of the repositories.
 │   ├── config_fuberlin.ini
 │   ├── config_huberlin.ini
