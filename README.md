@@ -96,7 +96,7 @@ $ python src/converter_service.py
   ```bash
   https://github.com/sefeoglu/bop-consus-importing-rdf
   ```
-Note: UI and RDF importer's images below are registered on fokus servers, so please register their images on your own server.
+Note: UI and RDF importer's images above are registered on fokus servers, so please register their images on your own server.
 
 
 ------------------------------------------------------------------
