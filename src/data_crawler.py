@@ -5,6 +5,7 @@ import xmltodict
 import json
 import argparse
 import configparser
+from urllib.parse import urlparse, urlunparse, urlencode, parse_qs
 
 PACKAGE_PARENT = '.'
 SCRIPT_DIR = os.path.dirname(os.path.realpath(os.path.join(os.getcwd(), os.path.expanduser(__file__))))
@@ -35,12 +36,28 @@ def crawler(url, file_path,  offset_count, start_number,end):
     record = []
     
     while exit == False:
-        new_url = url+str(i)
+        new_url = url
         # print(new_url)
         html_text = requests.get(new_url).text
         record.append({"start":i, "end":i+offset_count, "meta":html_text})
+        response_data = xmltodict.parse(html_text)
+        resumptionToken = False;
+        if 'resumptionToken' in response_data['OAI-PMH']['ListRecords']:
+            if '#text' in response_data['OAI-PMH']['ListRecords']['resumptionToken']:
+                resumptionToken = True
+                u = urlparse(url)
+                # Remove parameters not supported when resumptionToken is being used
+                query = parse_qs(u.query, keep_blank_values=True)
+                query.pop('metadataPrefix', None)
+                query.pop('from', None)
+                query.pop('until', None)
+                query.pop('set', None)
+                # print(response_data['OAI-PMH']['ListRecords']['resumptionToken'])
+                query['resumptionToken'] = response_data['OAI-PMH']['ListRecords']['resumptionToken']['#text']
+                u = u._replace(query=urlencode(query, True))
+                url = urlunparse(u)
         i = i + offset_count
-        if i > end:
+        if (i > end) or resumptionToken == False:
             break
         
     data_dict = dict()
@@ -50,6 +67,9 @@ def crawler(url, file_path,  offset_count, start_number,end):
 
         meta_data = xmltodict.parse(publication["meta"])
         # print(meta_data)
+        # might occur on last element of list? @cursor: 60 @completeListSize: 60
+        if not 'record' in meta_data['OAI-PMH']['ListRecords']:
+            continue;
         for meta_item in meta_data['OAI-PMH']['ListRecords']['record']:
             meta_keys = meta_item.keys()
 
@@ -83,4 +103,3 @@ def crawler(url, file_path,  offset_count, start_number,end):
 #     crawler(url, file_path, offset_count, start_number, end_number)
 
 #     print("The data crawler is completed.")
-
